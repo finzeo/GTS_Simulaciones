@@ -1,0 +1,4 @@
+Empezó a oscilar mucho el residuo de omega, lo cual parecía estar haciendo que el drag sea sorpresivamente algo más alto que la corrida anterior, con respecto a la cual solamente se cambió la malla
+(de hecho, debería haber mejorado con la malla nueva).
+Se piensa que el problema es que hay más celdas en la capa límite, entonces omega no responde bien de alguna forma por eso. Quizás por tener un growth factor alto.
+Se prueba con growth factor menor, y un primer tamaño de celda algo menor (ahora estaba yplus promedio en el orden de 40; llevarlo más a 30)

@@ -1,0 +1,1 @@
+Se cambia, respecto a caso base (run09), el uso de intensidad de turbulencia de 5% a 10%

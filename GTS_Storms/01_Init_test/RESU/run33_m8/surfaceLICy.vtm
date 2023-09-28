@@ -1,0 +1,10 @@
+<VTKFile type="vtkMultiBlockDataSet" version="1.0" byte_order="LittleEndian" header_type="UInt64">
+  <vtkMultiBlockDataSet>
+    <DataSet index="0" name="Fluid domain" file="surfaceLICy/surfaceLICy_0_0.vtu"/>
+  </vtkMultiBlockDataSet>
+  <FieldData>
+    <DataArray type="Float64" Name="TimeValue" NumberOfTuples="1" format="binary" RangeMin="0.38760000467300415" RangeMax="0.38760000467300415">
+      CAAAAAAAAAAAAABAcM7YPw==
+    </DataArray>
+  </FieldData>
+</VTKFile>

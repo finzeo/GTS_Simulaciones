@@ -1,0 +1,10 @@
+yaw angle [deg], projected_area [m2]
+0.0, 0.15179802
+2.5, 0.20446284
+5.0, 0.25112829
+7.5, 0.29504745
+10.0, 0.34327250
+12.5, 0.38854048
+14.0, 0.41538067
+// Obtenido manualmente en SolidWorks
+// Usar estos valores en notebook, para mayor eficiencia de acceso

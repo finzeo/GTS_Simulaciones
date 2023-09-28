@@ -1,0 +1,1 @@
+Todavía tenía perturbaciones en inlet y outlet, por tener malla no uniforme en dichas fronteras

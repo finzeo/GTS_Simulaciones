@@ -1,0 +1,2 @@
+Todavía tenía perturbaciones en inlet y outlet, por tener malla no uniforme en dichas fronteras
+La perturbación en inlet hacía que el drag bajara muchísimo, por una estela espuria de baja velocidad

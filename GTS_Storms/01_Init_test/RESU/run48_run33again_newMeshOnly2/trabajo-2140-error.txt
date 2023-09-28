@@ -1,0 +1,35 @@
+[n-17:335776:0:335776] ib_mlx5_log.c:138  Transport retry count exceeded on mlx5_0:1/IB (synd 0x15 vend 0x81 hw_synd 0/0)
+[n-17:335776:0:335776] ib_mlx5_log.c:138  DCI QP 0x2783d wqe[29]: NOP --- [rqpn 0x0 rlid 0]
+==== backtrace (tid: 335776) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x0000000000022070 uct_ib_mlx5_completion_with_err()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/mlx5/ib_mlx5_log.c:138
+ 2 0x0000000000044641 uct_ib_mlx5_poll_cq()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/mlx5/ib_mlx5.inl:81
+ 3 0x0000000000044641 uct_dc_mlx5_iface_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/dc/dc_mlx5.c:253
+ 4 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 5 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 6 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 7 0x000000000002e78b opal_progress()  ???:0
+ 8 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 9 0x000000000005467b ompi_request_default_wait()  ???:0
+10 0x00000000000a2d67 ompi_coll_base_bcast_intra_generic()  ???:0
+11 0x00000000000a2ece ompi_coll_base_bcast_intra_bintree()  ???:0
+12 0x000000000000634c ompi_coll_tuned_bcast_intra_dec_fixed()  ???:0
+13 0x0000000000005baa ompi_coll_tuned_allreduce_intra_dec_fixed()  ???:0
+14 0x00000000000647c0 MPI_Allreduce()  ???:0
+15 0x00000000004e628b cs_gdot()  ???:0
+16 0x000000000016c715 cs_equation_iterative_solve_scalar()  ???:0
+17 0x0000000000708783 cs_turbulence_kw()  ???:0
+18 0x00000000002b107e tridim_()  ???:0
+19 0x00000000000e9c59 caltri_()  ???:0
+20 0x0000000000006270 main()  ???:0
+21 0x000000000003ad85 __libc_start_main()  ???:0
+22 0x0000000000401c4e _start()  ???:0
+=================================
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 32 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------

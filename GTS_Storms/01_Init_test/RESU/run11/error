@@ -1,0 +1,15 @@
+
+
+../../../code_saturne-8.0.0/src/base/cs_preprocessor_data.c:227: Fatal error.
+
+No "mesh_input.csm" file or directory found.
+
+
+Call stack:
+   1: 0x7f144dab6301 <+0x1f2301>                      (libsaturne-8.0.so)
+   2: 0x7f144dab6660 <cs_preprocessor_data_read_headers+0x40> (libsaturne-8.0.so)
+   3: 0x7f144ee7ad41 <main+0x231>                     (libcs_solver-8.0.so)
+   4: 0x7f144bf1dd85 <__libc_start_main+0xe5>         (libc.so.6)
+   5: 0x40216e     <_start+0x2e>                    (cs_solver)
+End of stack
+

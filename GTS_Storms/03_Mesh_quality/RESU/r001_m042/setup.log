@@ -1,0 +1,32 @@
+
+Postprocessing output writers:
+------------------------------
+
+  -1: name: results
+      directory: postprocessing
+      format: EnSight Gold
+      options: separate_meshes
+      time dependency: fixed mesh
+      output: at end
+
+  -5: name: 
+      directory: monitoring
+      format: time_plot
+      options: CSV
+      time dependency: fixed mesh
+      output: every time step
+
+  -6: name: 
+      directory: profiles
+      format: plot
+      options: 
+      time dependency: fixed mesh
+      output: at end
+
+  -7: name: histograms
+      directory: histograms
+      format: histogram
+      options: txt
+      time dependency: fixed mesh
+      output: at end
+

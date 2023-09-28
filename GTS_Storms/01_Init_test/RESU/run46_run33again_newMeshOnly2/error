@@ -1,0 +1,24 @@
+
+
+../../../code_saturne-8.0.0/src/base/cs_file.c:1807: Fatal error.
+
+MPI IO error for file: postprocessing/results_fluid_domain.velocity.00002
+Error type: MPI_ERR_NO_SUCH_FILE: no such file or directory
+
+
+Call stack:
+   1: 0x7f7c28476782 <+0x2da782>                      (libsaturne-8.0.so)
+   2: 0x7f7c2847b55c <+0x2df55c>                      (libsaturne-8.0.so)
+   3: 0x7f7c2847b969 <cs_file_open+0x319>             (libsaturne-8.0.so)
+   4: 0x7f7c282589d5 <+0xbc9d5>                       (libsaturne-8.0.so)
+   5: 0x7f7c2825f607 <fvm_to_ensight_export_field+0xe7> (libsaturne-8.0.so)
+   6: 0x7f7c28268878 <fvm_writer_export_field+0xa8>   (libsaturne-8.0.so)
+   7: 0x7f7c2837dc11 <cs_post_write_var+0x301>        (libsaturne-8.0.so)
+   8: 0x7f7c28384b89 <cs_post_time_step_output+0x1bb9> (libsaturne-8.0.so)
+   9: 0x7f7c28386032 <cs_post_write_vars+0x112>       (libsaturne-8.0.so)
+  10: 0x7f7c2828666d <caltri_+0x212e>                 (libsaturne-8.0.so)
+  11: 0x7f7c29755270 <main+0x760>                     (libcs_solver-8.0.so)
+  12: 0x7f7c267f5d85 <__libc_start_main+0xe5>         (libc.so.6)
+  13: 0x401c4e     <_start+0x2e>                    (cs_solver)
+End of stack
+

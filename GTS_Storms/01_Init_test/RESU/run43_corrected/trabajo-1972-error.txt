@@ -1,0 +1,826 @@
+[n-0:686286:0:686286]       ud_ep.c:261  Fatal: UD endpoint 0x1dddd30 to <no debug data>: unhandled timeout error
+--------------------------------------------------------------------------
+ORTE has lost communication with a remote daemon.
+
+  HNP daemon   : [[43757,0],0] on node n-0
+  Remote daemon: [[43757,0],3] on node n-3
+
+This is usually due to either a failure of the TCP network
+connection to the node, or possibly an internal failure of
+the daemon itself. We cannot recover from this failure, and
+therefore will terminate the job.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+[n-0:686287:0:686287]       ud_ep.c:261  Fatal: UD endpoint 0x28b0000 to <no debug data>: unhandled timeout error
+[n-0:686290:0:686290]       ud_ep.c:261  Fatal: UD endpoint 0x1ffe3a0 to <no debug data>: unhandled timeout error
+[n-0:686292:0:686292]       ud_ep.c:261  Fatal: UD endpoint 0x1d5a450 to <no debug data>: unhandled timeout error
+[n-0:686291:0:686291]       ud_ep.c:261  Fatal: UD endpoint 0x1f48bf0 to <no debug data>: unhandled timeout error
+[n-0:686294:0:686294]       ud_ep.c:261  Fatal: UD endpoint 0x138ced0 to <no debug data>: unhandled timeout error
+[n-0:686293:0:686293]       ud_ep.c:261  Fatal: UD endpoint 0x21f3de0 to <no debug data>: unhandled timeout error
+[n-0:686296:0:686296]       ud_ep.c:261  Fatal: UD endpoint 0x1a710a0 to <no debug data>: unhandled timeout error
+[n-0:686295:0:686295]       ud_ep.c:261  Fatal: UD endpoint 0x1ea84d0 to <no debug data>: unhandled timeout error
+[n-0:686298:0:686298]       ud_ep.c:261  Fatal: UD endpoint 0x85e100 to <no debug data>: unhandled timeout error
+[n-0:686299:0:686299]       ud_ep.c:261  Fatal: UD endpoint 0x25a36f0 to <no debug data>: unhandled timeout error
+[n-0:686301:0:686301]       ud_ep.c:261  Fatal: UD endpoint 0x1721820 to <no debug data>: unhandled timeout error
+[n-0:686300:0:686300]       ud_ep.c:261  Fatal: UD endpoint 0x166d6f0 to <no debug data>: unhandled timeout error
+[n-0:686302:0:686302]       ud_ep.c:261  Fatal: UD endpoint 0x2658f50 to <no debug data>: unhandled timeout error
+[n-0:686303:0:686303]       ud_ep.c:261  Fatal: UD endpoint 0x23ac420 to <no debug data>: unhandled timeout error
+[n-0:686304:0:686304]       ud_ep.c:261  Fatal: UD endpoint 0x2957bd0 to <no debug data>: unhandled timeout error
+[n-0:686305:0:686305]       ud_ep.c:261  Fatal: UD endpoint 0x2c58fa0 to <no debug data>: unhandled timeout error
+[n-0:686306:0:686306]       ud_ep.c:261  Fatal: UD endpoint 0x1eb0580 to <no debug data>: unhandled timeout error
+[n-0:686307:0:686307]       ud_ep.c:261  Fatal: UD endpoint 0x149a470 to <no debug data>: unhandled timeout error
+[n-0:686308:0:686308]       ud_ep.c:261  Fatal: UD endpoint 0x13daef0 to <no debug data>: unhandled timeout error
+[n-0:686277:0:686277]       ud_ep.c:261  Fatal: UD endpoint 0x7f32f8009c10 to <no debug data>: unhandled timeout error
+[n-0:686279:0:686279]       ud_ep.c:261  Fatal: UD endpoint 0x215e090 to <no debug data>: unhandled timeout error
+[n-0:686280:0:686280]       ud_ep.c:261  Fatal: UD endpoint 0x13eed20 to <no debug data>: unhandled timeout error
+[n-0:686281:0:686281]       ud_ep.c:261  Fatal: UD endpoint 0x25d9880 to <no debug data>: unhandled timeout error
+[n-0:686284:0:686284]       ud_ep.c:261  Fatal: UD endpoint 0x1356420 to <no debug data>: unhandled timeout error
+[n-0:686309:0:686309]       ud_ep.c:261  Fatal: UD endpoint 0x1cc5fd0 to <no debug data>: unhandled timeout error
+[n-0:686285:0:686285]       ud_ep.c:261  Fatal: UD endpoint 0x2470fe0 to <no debug data>: unhandled timeout error
+==== backtrace (tid: 686300) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686302) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686303) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686304) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686305) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686308) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686307) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686306) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686277) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686279) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686280) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686281) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686284) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686309) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686285) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686286) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686287) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686290) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686292) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686291) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x00000000005a35de _mat_vec_p_l_msr()  cs_matrix_spmv.c:0
+12 0x00000000005b56d2 cs_multigrid_solve()  ???:0
+13 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+14 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+15 0x00000000005d5848 cs_sles_it_solve()  ???:0
+16 0x00000000005c20e7 cs_sles_solve()  ???:0
+17 0x00000000005c321b cs_sles_solve_native()  ???:0
+18 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+19 0x000000000029425f navstv_()  ???:0
+20 0x00000000002b0636 tridim_()  ???:0
+21 0x00000000000e9c59 caltri_()  ???:0
+22 0x0000000000006270 main()  ???:0
+23 0x000000000003ad85 __libc_start_main()  ???:0
+24 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686294) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686293) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686296) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686295) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x00000000005a35de _mat_vec_p_l_msr()  cs_matrix_spmv.c:0
+12 0x00000000005b56d2 cs_multigrid_solve()  ???:0
+13 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+14 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+15 0x00000000005d5848 cs_sles_it_solve()  ???:0
+16 0x00000000005c20e7 cs_sles_solve()  ???:0
+17 0x00000000005c321b cs_sles_solve_native()  ???:0
+18 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+19 0x000000000029425f navstv_()  ???:0
+20 0x00000000002b0636 tridim_()  ???:0
+21 0x00000000000e9c59 caltri_()  ???:0
+22 0x0000000000006270 main()  ???:0
+23 0x000000000003ad85 __libc_start_main()  ???:0
+24 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686298) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686299) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+==== backtrace (tid: 686301) ====
+ 0 0x00000000000211be ucs_debug_print_backtrace()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/debug/debug.c:656
+ 1 0x000000000004b12f uct_ud_ep_deferred_timeout_handler()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/ib/ud/base/ud_ep.c:261
+ 2 0x000000000001acb7 ucs_callbackq_slow_proxy()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.c:400
+ 3 0x000000000002cc2a ucs_callbackq_dispatch()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucs/datastruct/callbackq.h:211
+ 4 0x000000000002cc2a uct_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/uct/api/uct.h:2435
+ 5 0x000000000002cc2a ucp_worker_progress()  /dev/shm/UCX/1.10.0/GCCcore-10.3.0/ucx-1.10.0/src/ucp/core/ucp_worker.c:2405
+ 6 0x000000000002e78b opal_progress()  ???:0
+ 7 0x0000000000034875 ompi_sync_wait_mt()  ???:0
+ 8 0x0000000000054d5a ompi_request_default_wait_all()  ???:0
+ 9 0x000000000009136f MPI_Waitall()  ???:0
+10 0x00000000001905dd cs_halo_sync_wait()  ???:0
+11 0x000000000058a69d cs_matrix_pre_vector_multiply_sync()  ???:0
+12 0x00000000005b7cef _p_sym_gauss_seidel_msr()  cs_multigrid_smoother.c:0
+13 0x00000000005bff8c cs_multigrid_smoother_solve()  ???:0
+14 0x00000000005b55e8 cs_multigrid_solve()  ???:0
+15 0x00000000005b64eb _multigrid_pc_apply()  cs_multigrid.c:0
+16 0x00000000005c987a _flexible_conjugate_gradient()  cs_sles_it.c:0
+17 0x00000000005d5848 cs_sles_it_solve()  ???:0
+18 0x00000000005c20e7 cs_sles_solve()  ???:0
+19 0x00000000005c321b cs_sles_solve_native()  ???:0
+20 0x00000000001f8fac _pressure_correction_fv()  cs_pressure_correction.c:0
+21 0x000000000029425f navstv_()  ???:0
+22 0x00000000002b0636 tridim_()  ???:0
+23 0x00000000000e9c59 caltri_()  ???:0
+24 0x0000000000006270 main()  ???:0
+25 0x000000000003ad85 __libc_start_main()  ???:0
+26 0x0000000000401c4e _start()  ???:0
+=================================
+[warn] Epoll MOD(1) on fd 84 failed. Old events were 6; read change was 0 (none); write change was 2 (del); close change was 0 (none): Bad file descriptor

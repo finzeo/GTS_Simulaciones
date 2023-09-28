@@ -1,0 +1,161 @@
+/share/apps/code_saturne/8.0.0/libexec/code_saturne/cs_preprocess --reorient 
+--discard-bad-cells --out mesh_input.csm --log 
+/home/finzeo/Tesis/Simulaciones/GTS_Storms/MESH/GTS_2106_v4.med 
+
+  .------------------------------.
+  |                              |
+  |   code_saturne Preprocessor  |
+  |                              |
+  `------------------------------'
+
+  code_saturne version 8.0.0   (built Thu Jul 27 12:18:30 2023)
+
+  CGNS 4.2.0 file format support
+  MED 4.1.1 (HDF5 1.10.3) file format support
+  Reading of compressed files ('.gz') with Zlib 1.2.11
+
+
+
+Case configuration
+------------------
+
+  Date                : Thu Aug 17 11:16:18 2023
+  System              : Linux 4.18.0-372.9.1.el8.x86_64
+  Machine             : pirayu
+  Processor           : Intel(R) Xeon(R) Gold 6226R CPU @ 2.90GHz
+  Memory              : 131390420
+  User                : finzeo ()
+  Directory           : /home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run18
+
+  Case name           : preprocess
+  Mesh file           : /home/finzeo/Tesis/Simulaciones/GTS_Storms/MESH/GTS_2106_v4.med
+
+
+
+Reading mesh from file in MED (EDF/CEA) format
+----------------------
+  Mesh file: /home/finzeo/Tesis/Simulaciones/GTS_Storms/MESH/GTS_2106_v4.med
+
+
+  Mesh name: GTS_2106_v4
+
+  Number of vertices                          : 15661482
+  Number of faces                             :   809780
+                                   Family 1   :     1120
+                                   Family 2   :     5746
+                                   Family 3   :     4312
+                                   Family 4   :     4312
+                                   Family 5   :    79088
+                                   Family 6   :     6160
+                                   Family 7   :   709042
+  Number of cells                             : 14773145
+                                   Family 0   : 14773145
+
+  Wall-clock time: 2.864119 s; CPU time: 2.812904 s
+
+
+Done reading mesh
+-----------------
+  Theoretical mesh size:                 1.129 Gb
+  Theoretical current memory:            1.480 Gb
+  Theoretical peak memory:               2.371 Gb
+  Total memory used:                     2.411 Gb
+
+  Domain coordinate extents:
+
+  [-7.33423e+00, -1.52400e+00, -7.62000e-02]
+  [ 4.40057e+00,  1.52400e+00,  2.05740e+00]
+  Number of elements                    tria3 :       91
+  Number of elements                    quad4 :   809689
+  Number of elements                   penta6 :    13573
+  Number of elements                    hexa8 : 14413404
+  Number of elements               polyhedron :   346168
+
+
+
+Defining families
+-----------------
+
+
+  Element orientation check.
+
+
+Warning
+=======
+18 elements of type hexa8 had to be re-oriented.
+
+Warning
+=======
+15 elements of type hexa8 were impossible to re-orient.
+
+
+EnSight output of mesh: Orientation Error
+-----------------------
+  Creating file: preprocess.ensight/MESH.case
+  Creating file: preprocess.ensight/mesh.geo
+
+Mesh verification:
+
+  Removal of 15 degenerate cells:
+    Initial number of cells           :   14773145
+    Number of cells after processing  :   14773130
+
+End of conversion to descending connectivity
+--------------------------------------------
+  Theoretical mesh size:                 2.635 Gb
+  Theoretical current memory:            2.985 Gb
+  Theoretical peak memory:               6.646 Gb
+  Total memory used:                     6.731 Gb
+
+Warning
+=======
+There are 96 faces of which one same side belongs
+to at least 2 cells --> bad connectivity.
+Warning
+=======
+There is/are 6 isolated face(s)
+
+
+Main mesh properties
+--------------------
+
+  Number of cells:                              14773130
+  Number of internal faces:                     44391736
+  Number of boundary faces:                       813867
+  Number of vertices:                           15661482
+
+Creating mesh for output: Connectivity Error Faces
+-------------------------
+
+  Number of elements                    quad4 :       96
+
+
+EnSight output of mesh: Connectivity Error Faces
+-----------------------
+
+Warning
+=======
+The mesh has face -> cell connectivity errors.
+We can go no further.
+
+Time and memory summary
+-----------------------
+
+  User CPU time                       (sec)   :       29.73
+  System CPU time                     (sec)   :        7.18
+  Total time                          (sec)   :       37.10
+  Total CPU time / Total time                 :        1.00
+
+Memory use summary:
+
+  Total memory used:                                   6.731 Gb
+  Theoretical instrumented dynamic memory:             6.646 Gb
+
+
+  .-----------------------.
+  |                       |
+  |  Preprocessor finish  |
+  |                       |
+  `-----------------------'
+
+

@@ -1,0 +1,57 @@
+
+Local case configuration:
+
+  Date:                Thu 07 Sep 2023 12:17:12 AM -03
+  System:              Linux 4.18.0-372.9.1.el8.x86_64 (vý)
+  Machine:             n-24
+  Processor:           model name	: Intel(R) Xeon(R) Gold 6226R CPU @ 2.90GHz
+  Memory:              64062 MB
+  Directory:           /home/finzeo/Tesis/Simulaciones/GTS_Storms/02_Refined_case/RESU/r06_m4_UpwindRestartTest6_wUD
+  MPI ranks:           128
+  MPI ranks per node:  32
+  OpenMP threads:      1
+  Processors/node:     1
+
+  Compilers used for build:
+    C compiler:        gcc (GCC) 10.3.0
+    C++ compiler:      g++ (GCC) 10.3.0
+    Fortran compiler:  GNU Fortran (GCC) 10.3.0
+
+  MPI version: 3.1 (Open MPI 4.1.1)
+  OpenMP version: 4.5
+
+  External libraries:
+    METIS
+    PT-SCOTCH 6.1.2
+
+  I/O read method:     collective MPI-IO (explicit offsets)
+  I/O write method:    collective MPI-IO (explicit offsets)
+  I/O rank step:        4
+
+--------------------------------------------------------------------------------
+
+Partitioning:
+
+  preparing graph:            9.81 s
+  METIS_PartGraphKway:        37 s
+  wall clock time:            48.5 s
+
+--------------------------------------------------------------------------------
+
+Halo creation times summary
+
+  Interface creation:                        0.657 s
+  Halo creation:                             0.23 s
+
+  Total time for halo creation:              0.887 s
+
+--------------------------------------------------------------------------------
+
+Restart mapping
+                                         mean      minimum     maximum
+  location time:                        0.000        0.000        0.000
+    communication and wait:             0.000        0.000        0.000
+  variable exchange time:               0.000        0.000        0.000
+    communication and wait:             0.000        0.000        0.000
+
+--------------------------------------------------------------------------------

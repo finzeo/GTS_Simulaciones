@@ -1,0 +1,2 @@
+Cambiando solo la malla, el drag empeoró en aprox 0.02 promedio
+Se ve que mejorar la malla puede ser muy importante

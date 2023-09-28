@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?><Code_Saturne_GUI case="03_Mesh_quality" solver_version="8.0" study="GTS_Storms" version="2.0">
+  <additional_scalars/>
+  <analysis_control>
+    <output>
+      <listing_printing_frequency>1</listing_printing_frequency>
+      <mesh id="-1" label="Fluid domain" type="cells">
+        <all_variables status="on"/>
+        <location>all[]</location>
+        <writer id="-1"/>
+      </mesh>
+      <mesh id="-2" label="Boundary" type="boundary_faces">
+        <all_variables status="on"/>
+        <location>all[]</location>
+        <writer id="-1"/>
+      </mesh>
+      <probe_format choice="CSV"/>
+      <probe_recording_frequency>1</probe_recording_frequency>
+      <probes_interpolation choice=""/>
+      <probes_snap choice=""/>
+      <writer id="-1" label="results">
+        <directory name="postprocessing"/>
+        <format name="ensight" options="separate_meshes"/>
+        <frequency period="none"/>
+        <output_at_end status="on"/>
+        <time_dependency choice="fixed_mesh"/>
+      </writer>
+    </output>
+    <profiles/>
+    <time_averages/>
+    <time_parameters>
+      <property label="CourantNb" name="courant_number"/>
+      <property label="FourierNb" name="fourier_number"/>
+      <time_passing>0</time_passing>
+      <time_step_ref>0.1</time_step_ref>
+    </time_parameters>
+  </analysis_control>
+  <boundary_conditions>
+    <boundary label="inlet" name="1" nature="inlet">inlet</boundary>
+    <boundary label="outlet" name="2" nature="outlet">outlet</boundary>
+    <boundary label="NoSlip1" name="3" nature="symmetry">top</boundary>
+    <boundary label="NoSlip2" name="4" nature="symmetry">left</boundary>
+    <boundary label="NoSlip3" name="5" nature="symmetry">right</boundary>
+    <boundary label="NoSlip4" name="6" nature="wall">floor</boundary>
+    <boundary label="NoSlip5" name="7" nature="wall">gtsModel</boundary>
+    <boundary label="NoSlip6" name="8" nature="wall">gtsCorners</boundary>
+    <inlet field_id="none" label="inlet">
+      <turbulence choice="hydraulic_diameter">
+        <hydraulic_diameter>1</hydraulic_diameter>
+      </turbulence>
+      <velocity_pressure choice="norm" direction="normal">
+        <norm>1</norm>
+      </velocity_pressure>
+    </inlet>
+    <outlet field_id="none" label="outlet"/>
+    <symmetry field_id="none" label="NoSlip1"/>
+    <symmetry field_id="none" label="NoSlip2"/>
+    <symmetry field_id="none" label="NoSlip3"/>
+    <wall field_id="none" label="NoSlip4">
+      <velocity_pressure choice="off"/>
+    </wall>
+    <wall field_id="none" label="NoSlip5">
+      <velocity_pressure choice="off"/>
+    </wall>
+    <wall field_id="none" label="NoSlip6">
+      <velocity_pressure choice="off"/>
+    </wall>
+  </boundary_conditions>
+  <calculation_management>
+    <block_io/>
+    <partitioning/>
+    <run_type>mesh quality</run_type>
+  </calculation_management>
+  <lagrangian model="off"/>
+  <numerical_parameters>
+    <velocity_pressure_algo choice="simplec"/>
+  </numerical_parameters>
+  <physical_properties>
+    <fluid_properties>
+      <property choice="constant" label="Density" name="density">
+        <initial_value>1.17862</initial_value>
+        <listing_printing status="off"/>
+        <postprocessing_recording status="off"/>
+      </property>
+      <property choice="constant" label="DiffDyn" name="dynamic_diffusion">
+        <initial_value>0.01</initial_value>
+        <listing_printing status="off"/>
+        <postprocessing_recording status="off"/>
+      </property>
+      <property choice="constant" label="LamVisc" name="molecular_viscosity">
+        <initial_value>1.83e-05</initial_value>
+        <listing_printing status="off"/>
+        <postprocessing_recording status="off"/>
+      </property>
+      <reference_temperature>293.15</reference_temperature>
+    </fluid_properties>
+    <notebook/>
+    <time_tables/>
+  </physical_properties>
+  <solution_domain>
+    <extrusion/>
+    <faces_cutting status="off"/>
+    <joining/>
+    <mesh_cartesian>
+      <x_direction law="constant" max="1.0" min="0.0" ncells="1" prog="1.0"/>
+      <y_direction law="constant" max="1.0" min="0.0" ncells="1" prog="1.0"/>
+      <z_direction law="constant" max="1.0" min="0.0" ncells="1" prog="1.0"/>
+    </mesh_cartesian>
+    <mesh_smoothing status="off"/>
+    <meshes_list>
+      <mesh discard_bad_cells="on" name="case04_v2.med"/>
+    </meshes_list>
+    <periodicity/>
+    <thin_walls/>
+    <volumic_conditions>
+      <zone groundwater_law="off" head_losses="off" id="1" initialization="on" label="all_cells" momentum_source_term="off" physical_properties="on" porosity="off" scalar_source_term="off" solid="off" thermal_source_term="off">all[]</zone>
+    </volumic_conditions>
+  </solution_domain>
+  <thermophysical_models>
+    <ale_method/>
+    <atmospheric_flows model="off"/>
+    <compressible_model model="off"/>
+    <conjugate_heat_transfer>
+      <external_coupling>
+        <syrthes_instances/>
+      </external_coupling>
+    </conjugate_heat_transfer>
+    <gas_combustion model="off"/>
+    <groundwater_model model="off"/>
+    <joule_effect model="off"/>
+    <reference_values>
+      <length/>
+    </reference_values>
+    <solid_fuels model="off"/>
+    <thermal_scalar model="off"/>
+    <turbulence model="k-epsilon-PL">
+      <initialization choice="reference_value" zone_id="1"/>
+      <property label="TurbVisc" name="turbulent_viscosity"/>
+      <variable label="epsilon" name="epsilon"/>
+      <variable label="k" name="k"/>
+    </turbulence>
+    <velocity_pressure>
+      <property label="Stress" name="stress" support="boundary"/>
+      <property label="Stress, normal" name="stress_normal" support="boundary">
+        <postprocessing_recording status="off"/>
+      </property>
+      <property label="Stress, tangential" name="stress_tangential" support="boundary">
+        <postprocessing_recording status="off"/>
+      </property>
+      <property label="total_pressure" name="total_pressure"/>
+      <property label="Yplus" name="yplus" support="boundary"/>
+      <variable label="Pressure" name="pressure">
+        <rhs_reconstruction>2</rhs_reconstruction>
+      </variable>
+      <variable dimension="3" label="Velocity" name="velocity">
+        <rhs_reconstruction>1</rhs_reconstruction>
+      </variable>
+    </velocity_pressure>
+  </thermophysical_models>
+</Code_Saturne_GUI>

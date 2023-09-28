@@ -1,0 +1,68 @@
+
+Local case configuration:
+
+  Date:                Fri 01 Sep 2023 12:36:20 AM -03
+  System:              Linux 4.18.0-372.9.1.el8.x86_64 (f&ü)
+  Machine:             n-38
+  Processor:           model name	: Intel(R) Xeon(R) Gold 6226R CPU @ 2.90GHz
+  Memory:              64062 MB
+  Directory:           /home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run24
+  MPI ranks:           128
+  MPI ranks per node:  32
+  OpenMP threads:      1
+  Processors/node:     1
+
+  Compilers used for build:
+    C compiler:        gcc (GCC) 10.3.0
+    C++ compiler:      g++ (GCC) 10.3.0
+    Fortran compiler:  GNU Fortran (GCC) 10.3.0
+
+  MPI version: 3.1 (Open MPI 4.1.1)
+  OpenMP version: 4.5
+
+  External libraries:
+    METIS
+    PT-SCOTCH 6.1.2
+
+  I/O read method:     collective MPI-IO (explicit offsets)
+  I/O write method:    collective MPI-IO (explicit offsets)
+  I/O rank step:        4
+
+--------------------------------------------------------------------------------
+
+Partitioning:
+
+  preparing graph:            2.81 s
+  METIS_PartGraphKway:        10.7 s
+  wall clock time:            13.9 s
+
+--------------------------------------------------------------------------------
+
+Halo creation times summary
+
+  Interface creation:                        0.179 s
+  Halo creation:                             0.0602 s
+
+  Total time for halo creation:              0.239 s
+
+--------------------------------------------------------------------------------
+
+Writing of "results" (EnSight Gold) summary:
+
+  Elapsed time for meshes:                 1.320
+  Elapsed time for variables:              1.466
+  Elapsed time forcing output:             0.000
+
+Writing of "" (plot) summary:
+
+  Elapsed time for meshes:                 0.000
+  Elapsed time for variables:              0.000
+  Elapsed time forcing output:             0.000
+
+Writing of "error" (EnSight Gold) summary:
+
+  Elapsed time for meshes:                 1.411
+  Elapsed time for variables:              0.726
+  Elapsed time forcing output:             0.000
+
+--------------------------------------------------------------------------------

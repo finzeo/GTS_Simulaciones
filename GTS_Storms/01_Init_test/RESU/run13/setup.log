@@ -1,0 +1,130 @@
+Notebook:
+---------
+
+  Entry #0
+    name:         width
+    description:  Ancho del vehiculo
+    uncertain:    -1
+    editable:     0
+    value:        0.323850
+
+  Entry #1
+    name:         length
+    description:  Longitud del vehiculo
+    uncertain:    -1
+    editable:     0
+    value:        2.476481
+
+  Entry #2
+    name:         height
+    description:  Altura del vehiculo
+    uncertain:    -1
+    editable:     0
+    value:        0.450800
+
+  Entry #3
+    name:         struts_height
+    description:  Altura de los soportes inferiores
+    uncertain:    -1
+    editable:     0
+    value:        0.076200
+
+  Entry #4
+    name:         struts_diam
+    description:  Diametro de los soportes inferiores
+    uncertain:    -1
+    editable:     0
+    value:        0.038100
+
+  Entry #5
+    name:         pressure_dynamic
+    description:  Presion dinamica
+    uncertain:    -1
+    editable:     0
+    value:        5329.073000
+
+  Entry #6
+    name:         temp_static
+    description:  Temperatura estatica (en grados Celsius)
+    uncertain:    -1
+    editable:     0
+    value:        8.500000
+
+  Entry #7
+    name:         pressure_static
+    description:  Presion estatica
+    uncertain:    -1
+    editable:     0
+    value:        97297.474000
+
+  Entry #8
+    name:         vel_inf
+    description:  Velocidad de corriente libre
+    uncertain:    -1
+    editable:     0
+    value:        94.244000
+
+  Entry #9
+    name:         yaw_angle
+    description:  Angulo de guiniada
+    uncertain:    -1
+    editable:     0
+    value:        0.000000
+
+  Entry #10
+    name:         proj_area_0_0
+    description:  Area proyectada para yaw_angle=0.0 (de SolidWorks)
+    uncertain:    -1
+    editable:     0
+    value:        0.151798
+
+  Entry #11
+    name:         proj_area_2_5
+    description:  Area proyectada para yaw_angle=2.5 (de SolidWorks)
+    uncertain:    -1
+    editable:     0
+    value:        0.204463
+
+  Entry #12
+    name:         proj_area_5_0
+    description:  Area proyectada para yaw_angle=5.0 (de SolidWorks)
+    uncertain:    -1
+    editable:     0
+    value:        0.251128
+
+  Entry #13
+    name:         proj_area_7_5
+    description:  Area proyectada para yaw_angle=7.5 (de SolidWorks)
+    uncertain:    -1
+    editable:     0
+    value:        0.295047
+
+  Entry #14
+    name:         proj_area_10_0
+    description:  Area proyectada para yaw_angle=10.0 (de SolidWorks)
+    uncertain:    -1
+    editable:     0
+    value:        0.343272
+
+  Entry #15
+    name:         proj_area_12_5
+    description:  Area proyectada para yaw_angle=12.5 (de SolidWorks)
+    uncertain:    -1
+    editable:     0
+    value:        0.388540
+
+  Entry #16
+    name:         proj_area_14_0
+    description:  Area proyectada para yaw_angle=14.0 (de SolidWorks)
+    uncertain:    -1
+    editable:     0
+    value:        0.415381
+
+  Entry #17
+    name:         turbIntensity
+    description:  Intensidad de turbulencia (expresada como valor relativo, no porcentual) (e.g. : 1% -> 0.01)
+    uncertain:    -1
+    editable:     0
+    value:        0.010000
+
+--------------------------------------------------------------------------------

@@ -1,0 +1,33 @@
+SIGABRT signal (abort) intercepted.
+
+Call stack:
+   1: 0x7f331cd15acf <gsignal+0x10f>                  (libc.so.6)
+   2: 0x7f331cce8ea5 <abort+0x127>                    (libc.so.6)
+   3: 0x7f331806c715 <+0x1f715>                       (libucs.so.0)
+   4: 0x7f331806c7f1 <+0x1f7f1>                       (libucs.so.0)
+   5: 0x7f331038e12f <+0x4b12f>                       (libuct_ib.so.0)
+   6: 0x7f3318067cb7 <+0x1acb7>                       (libucs.so.0)
+   7: 0x7f33180f2c2a <ucp_worker_progress+0x5a>       (libucp.so.0)
+   8: 0x7f331cb8c78b <opal_progress+0x2b>             (libopen-pal.so.40)
+   9: 0x7f331cb92875 <ompi_sync_wait_mt+0xb5>         (libopen-pal.so.40)
+  10: 0x7f331fb6dd5a <ompi_request_default_wait_all+0x3ba> (libmpi.so.40)
+  11: 0x7f331fbaa36f <PMPI_Waitall+0x8f>              (libmpi.so.40)
+  12: 0x7f331e8385dd <cs_halo_sync_wait+0xad>         (libsaturne-8.0.so)
+  13: 0x7f331ec3269d <cs_matrix_pre_vector_multiply_sync+0x5d> (libsaturne-8.0.so)
+  14: 0x7f331ec5fcef <+0x5b7cef>                      (libsaturne-8.0.so)
+  15: 0x7f331ec67f8c <cs_multigrid_smoother_solve+0x12c> (libsaturne-8.0.so)
+  16: 0x7f331ec5d5e8 <cs_multigrid_solve+0x828>       (libsaturne-8.0.so)
+  17: 0x7f331ec5e4eb <+0x5b64eb>                      (libsaturne-8.0.so)
+  18: 0x7f331ec7187a <+0x5c987a>                      (libsaturne-8.0.so)
+  19: 0x7f331ec7d848 <cs_sles_it_solve+0x128>         (libsaturne-8.0.so)
+  20: 0x7f331ec6a0e7 <cs_sles_solve+0x2b7>            (libsaturne-8.0.so)
+  21: 0x7f331ec6b21b <cs_sles_solve_native+0x45b>     (libsaturne-8.0.so)
+  22: 0x7f331e8a0fac <+0x1f8fac>                      (libsaturne-8.0.so)
+  23: 0x7f331e93c25f <navstv_+0x4b8f>                 (libsaturne-8.0.so)
+  24: 0x7f331e958636 <tridim_+0x30f2>                 (libsaturne-8.0.so)
+  25: 0x7f331e791c59 <caltri_+0x171a>                 (libsaturne-8.0.so)
+  26: 0x7f331fc61270 <main+0x760>                     (libcs_solver-8.0.so)
+  27: 0x7f331cd01d85 <__libc_start_main+0xe5>         (libc.so.6)
+  28: 0x401c4e     <_start+0x2e>                    (cs_solver)
+End of stack
+

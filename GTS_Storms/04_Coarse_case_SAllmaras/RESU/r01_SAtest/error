@@ -1,0 +1,19 @@
+
+
+../../../code_saturne-8.0.0/src/base/cs_parameters_check.c:793: Fatal error.
+
+128 parameter error(s) reported.
+
+Read error messages above for details, then
+check your data and parameters (GUI and user subroutines).
+
+
+Call stack:
+   1: 0x7f6f34423402 <cs_parameters_error_barrier+0x72> (libsaturne-8.0.so)
+   2: 0x7f6f34424165 <cs_parameters_check+0xd45>      (libsaturne-8.0.so)
+   3: 0x7f6f344cf816 <initi1_+0x245>                  (libsaturne-8.0.so)
+   4: 0x7f6f3580d188 <main+0x678>                     (libcs_solver-8.0.so)
+   5: 0x7f6f328add85 <__libc_start_main+0xe5>         (libc.so.6)
+   6: 0x401c4e     <_start+0x2e>                    (cs_solver)
+End of stack
+

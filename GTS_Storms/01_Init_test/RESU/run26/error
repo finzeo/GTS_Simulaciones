@@ -1,0 +1,20 @@
+
+
+../../../code_saturne-8.0.0/src/alge/cs_sles_it.c:5133: Fatal error.
+
+Flexible Conjugate Gradient: error (divergence) solving for Pressure
+
+
+Call stack:
+   1: 0x7f80666fe4ba <cs_sles_it_error_post_and_abort+0x8a> (libsaturne-8.0.so)
+   2: 0x7f80666f40a6 <cs_sles_solve+0x276>            (libsaturne-8.0.so)
+   3: 0x7f80666f521b <cs_sles_solve_native+0x45b>     (libsaturne-8.0.so)
+   4: 0x7f806632afac <+0x1f8fac>                      (libsaturne-8.0.so)
+   5: 0x7f80663c625f <navstv_+0x4b8f>                 (libsaturne-8.0.so)
+   6: 0x7f80663e2636 <tridim_+0x30f2>                 (libsaturne-8.0.so)
+   7: 0x7f806621bc59 <caltri_+0x171a>                 (libsaturne-8.0.so)
+   8: 0x7f80676eb270 <main+0x760>                     (libcs_solver-8.0.so)
+   9: 0x7f806478bd85 <__libc_start_main+0xe5>         (libc.so.6)
+  10: 0x401bbe     <_start+0x2e>                    (cs_solver)
+End of stack
+

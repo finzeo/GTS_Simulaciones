@@ -1,0 +1,49 @@
+#!/bin/bash
+
+# Export paths here if necessary or recommended.
+export PATH="/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/bin":$PATH
+export LD_LIBRARY_PATH="/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/lib":$LD_LIBRARY_PATH
+
+# Load environment if this script is run directly.
+if test "$CS_ENVIRONMENT_SET" != "true" ; then
+  module purge
+  module load GCCcore/10.3.0
+  module load zlib/1.2.11-GCCcore-10.3.0
+  module load binutils/2.36.1-GCCcore-10.3.0
+  module load GCC/10.3.0
+  module load numactl/2.0.14-GCCcore-10.3.0
+  module load libxml2/2.9.10-GCCcore-10.3.0
+  module load libpciaccess/0.16-GCCcore-10.3.0
+  module load hwloc/2.4.1-GCCcore-10.3.0
+  module load libevent/2.1.12-GCCcore-10.3.0
+  module load UCX/1.10.0-GCCcore-10.3.0
+  module load libfabric/1.12.1-GCCcore-10.3.0
+  module load PMIx/3.2.3-GCCcore-10.3.0
+  module load OpenMPI/4.1.1-GCC-10.3.0
+  module load FlexiBLAS/3.0.4-GCC-10.3.0
+  module load gompi/2021a
+  module load FFTW/3.3.9-gompi-2021a
+  module load ScaLAPACK/2.1.0-gompi-2021a-fb
+  module load foss/2021a
+  module load OpenBLAS/0.3.15-GCC-10.3.0
+fi
+
+# Additional library search paths for dependencies.
+export LD_LIBRARY_PATH="/share/apps/salome/9.11.0/BINARIES-CO7/scotch/lib":$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH="/share/apps/salome/9.11.0/BINARIES-CO7/metis/lib":$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH="/share/apps/salome/9.11.0/BINARIES-CO7/hdf5/lib":$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH="/share/apps/salome/9.11.0/BINARIES-CO7/medfile/lib":$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH="/share/apps/salome/9.11.0/BINARIES-CO7/cgns/lib":$LD_LIBRARY_PATH
+# Library search path for code_saturne.
+export LD_LIBRARY_PATH="/share/apps/code_saturne/8.0.0/lib":$LD_LIBRARY_PATH
+
+
+export OMP_NUM_THREADS=1
+
+cd /home/finzeo/Tesis/Simulaciones/GTS_Storms/02_Refined_case/RESU/r03_m1_It025
+
+# Run solver.
+./cs_solver "$@"
+export CS_RET=$?
+
+exit $CS_RET

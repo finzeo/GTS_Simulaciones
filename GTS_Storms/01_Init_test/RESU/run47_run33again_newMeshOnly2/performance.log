@@ -1,0 +1,48 @@
+
+Local case configuration:
+
+  Date:                Wed 27 Sep 2023 11:44:36 AM -03
+  System:              Linux 4.18.0-372.9.1.el8.x86_64 (îFü)
+  Machine:             n-0
+  Processor:           model name	: Intel(R) Xeon(R) Gold 6226R CPU @ 2.90GHz
+  Memory:              64062 MB
+  Directory:           /home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run47_run33again_newMeshOnly2
+  MPI ranks:           192
+  MPI ranks per node:  32
+  OpenMP threads:      1
+  Processors/node:     1
+
+  Compilers used for build:
+    C compiler:        gcc (GCC) 10.3.0
+    C++ compiler:      g++ (GCC) 10.3.0
+    Fortran compiler:  GNU Fortran (GCC) 10.3.0
+
+  MPI version: 3.1 (Open MPI 4.1.1)
+  OpenMP version: 4.5
+
+  External libraries:
+    METIS
+    PT-SCOTCH 6.1.2
+
+  I/O read method:     collective MPI-IO (explicit offsets)
+  I/O write method:    collective MPI-IO (explicit offsets)
+  I/O rank step:        4
+
+--------------------------------------------------------------------------------
+
+Partitioning:
+
+  preparing graph:            7.75 s
+  METIS_PartGraphKway:        26.6 s
+  wall clock time:            35.5 s
+
+--------------------------------------------------------------------------------
+
+Halo creation times summary
+
+  Interface creation:                        0.412 s
+  Halo creation:                             0.0925 s
+
+  Total time for halo creation:              0.505 s
+
+--------------------------------------------------------------------------------

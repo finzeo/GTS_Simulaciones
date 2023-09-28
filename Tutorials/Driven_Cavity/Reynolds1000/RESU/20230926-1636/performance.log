@@ -1,0 +1,228 @@
+
+Local case configuration:
+
+  Date:                Tue 26 Sep 2023 04:36:37 PM -03
+  System:              Linux 4.18.0-372.9.1.el8.x86_64 (Rocky Linux 8.6 (Green Obsidian))
+  Machine:             pirayu
+  Processor:           model name	: Intel(R) Xeon(R) Gold 6226R CPU @ 2.90GHz
+  Memory:              128310 MB
+  Directory:           /home/finzeo/Tesis/Simulaciones/Tutorials/Driven_Cavity/Reynolds1000/RESU/20230926-1636
+  OpenMP threads:      1
+  Processors/node:     64
+
+  Compilers used for build:
+    C compiler:        gcc (GCC) 10.3.0
+    C++ compiler:      g++ (GCC) 10.3.0
+    Fortran compiler:  GNU Fortran (GCC) 10.3.0
+
+  MPI version: 3.1 (Open MPI 4.1.1)
+  OpenMP version: 4.5
+
+  External libraries:
+    METIS
+    PT-SCOTCH 6.1.2
+
+  I/O read method:     standard input and output, serial access
+  I/O write method:    standard input and output, serial access
+
+--------------------------------------------------------------------------------
+
+Halo creation times summary
+
+  Halo creation:                             0 s
+
+  Total time for halo creation:              0 s
+
+--------------------------------------------------------------------------------
+
+Total elapsed time for all gradient computations:  4.124 s
+
+Summary of gradient computations for "[cell mass flux divergence update]":
+
+  Reconstruction type:   Green-Gauss, least-squares gradient face values
+  Number of calls:       1270
+  Total elapsed time:    0.329
+
+Summary of gradient computations for "[face mass flux update]":
+
+  Reconstruction type:   Green-Gauss, least-squares gradient face values
+  Number of calls:       800
+  Total elapsed time:    0.208
+
+Summary of gradient computations for "[momentum]":
+
+  Reconstruction type:   Green-Gauss, least-squares gradient face values
+  Number of calls:       400
+  Total elapsed time:    0.809
+
+Summary of gradient computations for "pressure":
+
+  Reconstruction type:   Green-Gauss, least-squares gradient face values
+  Number of calls:       800
+  Total elapsed time:    0.209
+
+Summary of gradient computations for "pressure_increment":
+
+  Reconstruction type:   Green-Gauss, least-squares gradient face values
+  Number of calls:       400
+  Total elapsed time:    0.104
+
+Summary of gradient computations for "velocity":
+
+  Reconstruction type:   Green-Gauss, least-squares gradient face values
+  Number of calls:       1199
+  Total elapsed time:    2.466
+
+--------------------------------------------------------------------------------
+
+Total elapsed time for linear equation system solvers:  1.135 s
+
+Linear solver performance for fields
+------------------------------------
+
+Summary of resolutions for "Velocity" (field id 0)
+
+  Solver type:                   Symmetric Gauss-Seidel
+  Number of setups:                       400
+  Number of calls:                        400
+  Minimum number of iterations:             1
+  Maximum number of iterations:             9
+  Mean number of iterations:                4
+  Total setup time:                     0.019
+  Total solution time:                  0.434
+
+Summary of resolutions for "Pressure" (field id 1)
+
+  Solver type:                   Flexible Conjugate Gradient
+  Preconditioning:               Multigrid
+  Number of setups:                       400
+  Number of calls:                        435
+  Minimum number of iterations:             4
+  Maximum number of iterations:            15
+  Mean number of iterations:                8
+  Total setup time:                     0.180
+  Total solution time:                  0.517
+
+  Multigrid:
+    V-cycle
+    Coarsening: default
+    Smoother: Symmetric Gauss-Seidel
+    Coarsest level solver:       Conjugate Gradient
+
+                                               mean      minimum      maximum
+  Number of levels:                               4            4            4
+  Number of cycles:                               1            1            2
+
+                                                           calls         time
+  Construction:                                              400        0.353
+  Resolution:                                               3963        0.446
+
+                                               mean      minimum      maximum
+  Grid level 0:
+    Number of rows:                            2500         2500         2500
+    Number of entries:                        12300        12300        12300
+    Descent smoother iterations:                  1            1            1
+  Grid level 1:
+    Number of rows:                             634          634          634
+    Number of entries:                         4246         4246         4246
+    Descent smoother iterations:                  1            1            1
+    Ascent smoother iterations:                   1            1            1
+  Grid level 2:
+    Number of rows:                             212          212          212
+    Number of entries:                         1372         1372         1372
+    Descent smoother iterations:                  1            1            1
+    Ascent smoother iterations:                   1            1            1
+  Grid level 3:
+    Number of rows:                              70           70           70
+    Number of entries:                          426          426          426
+    Iterations for solving:                      18            1           53
+                                                           calls         time
+  Grid level 0:
+    build:                                                   400        0.007
+    descent smoothe:                                        6744        0.274
+    restrict:                                               2781        0.008
+    prolong:                                                2781        0.007
+  Grid level 1:
+    build:                                                   400        0.100
+    descent smoothe:                                        2781        0.034
+    ascent smoothe:                                         2781        0.022
+    restrict:                                               2781        0.003
+    prolong:                                                2781        0.003
+  Grid level 2:
+    build:                                                   400        0.046
+    descent smoothe:                                        2781        0.014
+    ascent smoothe:                                         2781        0.008
+    restrict:                                               2781        0.002
+    prolong:                                                2781        0.002
+  Grid level 3:
+    build:                                                   400        0.025
+    solve:                                                  2781        0.064
+
+--------------------------------------------------------------------------------
+
+Total elapsed time for controller:  0.001 s
+
+Mesh entity selections by criteria statistics:
+
+  entity type     evaluations          time
+  -----------------------------------------
+  cells                     0       0.00000
+  interior faces            0       0.00000
+  boundary faces            3       0.00002
+
+--------------------------------------------------------------------------------
+
+Writing of "results" (EnSight Gold) summary:
+
+  Elapsed time for meshes:                 0.000
+  Elapsed time for variables:              0.052
+  Elapsed time forcing output:             0.000
+
+Writing of "" (time_plot) summary:
+
+  Elapsed time for meshes:                 0.000
+  Elapsed time for variables:              0.011
+  Elapsed time forcing output:             0.000
+
+Writing of "" (plot) summary:
+
+  Elapsed time for meshes:                 0.000
+  Elapsed time for variables:              0.000
+  Elapsed time forcing output:             0.000
+
+--------------------------------------------------------------------------------
+
+code_saturne IO files read:
+
+  mesh_input.csm
+    data:      0.00074 s,      614.451 KiB
+    open:      0.00090 s, 2 open(s)
+
+code_saturne IO files written:
+
+  checkpoint/auxiliary.csc
+    data:      0.00410 s,        5.707 MiB
+    open:      0.00489 s, 4 open(s)
+  checkpoint/main.csc
+    data:      0.00027 s,      323.215 KiB
+    open:      0.00048 s, 4 open(s)
+
+--------------------------------------------------------------------------------
+
+Calculation time summary:
+
+  User CPU time:              6.516 s
+  System CPU time:            0.121 s
+
+  Elapsed time:               6.883 s
+  CPU / elapsed time          0.964
+
+--------------------------------------------------------------------------------
+
+Memory use summary:
+
+  Total memory used:                             280.715 MiB
+  Virtual memory used:                           282.137 MiB
+  Shared libraries memory used:                   28.691 MiB
+
+--------------------------------------------------------------------------------

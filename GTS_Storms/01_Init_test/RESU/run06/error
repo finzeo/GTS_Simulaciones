@@ -1,0 +1,15 @@
+SIGINT signal (Control+C or equivalent) received.
+--> computation interrupted by user.
+
+Call stack:
+   1: 0x7f1cd42c0ec9 <+0x309ec9>                      (libsaturne-8.0.so)
+   2: 0x7f1cd42c122a <+0x30a22a>                      (libsaturne-8.0.so)
+   3: 0x7f1cd42d5954 <+0x31e954>                      (libsaturne-8.0.so)
+   4: 0x7f1cd42dd07d <+0x32607d>                      (libsaturne-8.0.so)
+   5: 0x7f1cd42df708 <cs_renumber_mesh+0xb8>          (libsaturne-8.0.so)
+   6: 0x7f1cd41a5ccd <cs_preprocess_mesh+0x30d>       (libsaturne-8.0.so)
+   7: 0x7f1cd5569e16 <main+0x306>                     (libcs_solver-8.0.so)
+   8: 0x7f1cd2610d85 <__libc_start_main+0xe5>         (libc.so.6)
+   9: 0x40216e     <_start+0x2e>                    (cs_solver)
+End of stack
+

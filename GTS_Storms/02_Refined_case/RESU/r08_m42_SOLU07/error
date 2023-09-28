@@ -1,0 +1,14 @@
+
+
+../../../code_saturne-8.0.0/src/base/cs_runaway_check.c:244: Fatal error.
+
+Runaway computation:
+  At least one field exceeded allowed bounds (see log).
+
+
+Call stack:
+   1: 0x7fc2d457805c <main+0x54c>                     (libcs_solver-8.0.so)
+   2: 0x7fc2d1618d85 <__libc_start_main+0xe5>         (libc.so.6)
+   3: 0x401bbe     <_start+0x2e>                    (cs_solver)
+End of stack
+

@@ -1,0 +1,93 @@
+
+Local case configuration:
+
+  Date:                Fri 15 Sep 2023 11:36:41 AM -03
+  System:              Linux 4.18.0-372.9.1.el8.x86_64 (Rocky Linux 8.6 (Green Obsidian))
+  Machine:             pirayu
+  Processor:           model name	: Intel(R) Xeon(R) Gold 6226R CPU @ 2.90GHz
+  Memory:              128310 MB
+  Directory:           /home/finzeo/Tesis/Simulaciones/GTS_Storms/03_Mesh_quality/RESU/r001_m042
+  OpenMP threads:      1
+  Processors/node:     64
+
+  Compilers used for build:
+    C compiler:        gcc (GCC) 10.3.0
+    C++ compiler:      g++ (GCC) 10.3.0
+    Fortran compiler:  GNU Fortran (GCC) 10.3.0
+
+  MPI version: 3.1 (Open MPI 4.1.1)
+  OpenMP version: 4.5
+
+  External libraries:
+    METIS
+    PT-SCOTCH 6.1.2
+
+  I/O read method:     standard input and output, serial access
+  I/O write method:    standard input and output, serial access
+
+--------------------------------------------------------------------------------
+
+Halo creation times summary
+
+  Extended connectivity creation:            91.8 s
+  Halo creation:                             0 s
+
+  Total time for halo creation:              91.8 s
+
+--------------------------------------------------------------------------------
+
+Total elapsed time for all gradient computations:  0.000 s
+
+--------------------------------------------------------------------------------
+
+Total elapsed time for controller:  0.000 s
+
+Mesh entity selections by criteria statistics:
+
+  entity type     evaluations          time
+  -----------------------------------------
+  cells                     0       0.00000
+  interior faces            0       0.00000
+  boundary faces            8       0.01043
+
+--------------------------------------------------------------------------------
+
+Writing of "results" (EnSight Gold) summary:
+
+  Elapsed time for meshes:                 3.322
+  Elapsed time for variables:              3.620
+  Elapsed time forcing output:             0.000
+
+--------------------------------------------------------------------------------
+
+code_saturne IO files read:
+
+  mesh_input.csm
+    data:     15.60045 s,       11.919 GiB
+    open:     16.15474 s, 2 open(s)
+
+code_saturne IO files written:
+
+  mesh_output.csm
+    data:     12.12766 s,       13.507 GiB
+    open:     20.94399 s, 1 open(s)
+
+--------------------------------------------------------------------------------
+
+Calculation time summary:
+
+  User CPU time:            426.726 s
+  System CPU time:          128.722 s
+
+  Elapsed time:             557.147 s
+  CPU / elapsed time          0.997
+
+--------------------------------------------------------------------------------
+
+Memory use summary:
+
+  Total memory used:                              59.833 GiB
+  Virtual memory used:                            61.630 GiB
+  Shared libraries memory used:                   28.684 MiB
+
+--------------------------------------------------------------------------------

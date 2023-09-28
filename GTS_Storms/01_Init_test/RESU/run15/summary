@@ -1,0 +1,181 @@
+========================================================
+Start time       : Wednesday August 09 16:51:17 CEST 2023
+========================================================
+  Command        : /share/apps/code_saturne/8.0.0/bin/code_saturne run --id=run15 --param=setup.xml --initialize
+========================================================
+  Package path   : /share/apps/code_saturne/8.0.0
+  ----------------------------------------------------
+  MPI path       : /share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/bin
+  MPI type       : OpenMPI
+  ----------------------------------------------------
+  User           : finzeo
+  ----------------------------------------------------
+  Machine        : Linux pirayu 4.18.0-372.9.1.el8.x86_64 #1 SMP Tue May 10 14:48:47 UTC 2022 x86_64 x86_64 
+  N Procs        : 1
+  ----------------------------------------------------
+  Environment variables
+    ACLOCAL_PATH=/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0/share/aclocal
+    BASH_ENV=/opt/ohpc/admin/lmod/lmod/init/bash
+    BASH_FUNC_scl%%=() {  if [ "$1" = "load" -o "$1" = "unload" ]; then
+ eval "module $@";
+ else
+ /usr/bin/scl "$@";
+ fi
+}
+    BASH_FUNC_which%%=() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
+}
+    CMAKE_LIBRARY_PATH=/share/apps/easybuild/software/GCCcore/10.3.0/lib64
+    CMAKE_PREFIX_PATH=/share/apps/easybuild/software/OpenBLAS/0.3.15-GCC-10.3.0:/share/apps/easybuild/software/ScaLAPACK/2.1.0-gompi-2021a-fb:/share/apps/easybuild/software/FFTW/3.3.9-gompi-2021a:/share/apps/easybuild/software/FlexiBLAS/3.0.4-GCC-10.3.0:/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0:/share/apps/easybuild/software/PMIx/3.2.3-GCCcore-10.3.0:/share/apps/easybuild/software/libfabric/1.12.1-GCCcore-10.3.0:/share/apps/easybuild/software/UCX/1.10.0-GCCcore-10.3.0:/share/apps/easybuild/software/libevent/2.1.12-GCCcore-10.3.0:/share/apps/easybuild/software/hwloc/2.4.1-GCCcore-10.3.0:/share/apps/easybuild/software/libpciaccess/0.16-GCCcore-10.3.0:/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0:/share/apps/easybuild/software/numactl/2.0.14-GCCcore-10.3.0:/share/apps/easybuild/software/binutils/2.36.1-GCCcore-10.3.0:/share/apps/easybuild/software/zlib/1.2.11-GCCcore-10.3.0:/share/apps/easybuild/software/GCCcore/10.3.0
+    COLORTERM=truecolor
+    CPATH=/share/apps/easybuild/software/OpenBLAS/0.3.15-GCC-10.3.0/include:/share/apps/easybuild/software/FFTW/3.3.9-gompi-2021a/include:/share/apps/easybuild/software/FlexiBLAS/3.0.4-GCC-10.3.0/include/flexiblas:/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/include:/share/apps/easybuild/software/PMIx/3.2.3-GCCcore-10.3.0/include:/share/apps/easybuild/software/libfabric/1.12.1-GCCcore-10.3.0/include:/share/apps/easybuild/software/UCX/1.10.0-GCCcore-10.3.0/include:/share/apps/easybuild/software/libevent/2.1.12-GCCcore-10.3.0/include:/share/apps/easybuild/software/hwloc/2.4.1-GCCcore-10.3.0/include:/share/apps/easybuild/software/libpciaccess/0.16-GCCcore-10.3.0/include:/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0/include/libxml2:/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0/include:/share/apps/easybuild/software/numactl/2.0.14-GCCcore-10.3.0/include:/share/apps/easybuild/software/binutils/2.36.1-GCCcore-10.3.0/include:/share/apps/easybuild/software/zlib/1.2.11-GCCcore-10.3.0/include
+    DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-hW6XdSHfN4,guid=fb8c0c6a718a90e2953085cf64c93be1
+    DISPLAY=:127.0
+    EBDEVELBINUTILS=/share/apps/easybuild/software/binutils/2.36.1-GCCcore-10.3.0/easybuild/binutils-2.36.1-GCCcore-10.3.0-easybuild-devel
+    EBDEVELFFTW=/share/apps/easybuild/software/FFTW/3.3.9-gompi-2021a/easybuild/FFTW-3.3.9-gompi-2021a-easybuild-devel
+    EBDEVELFLEXIBLAS=/share/apps/easybuild/software/FlexiBLAS/3.0.4-GCC-10.3.0/easybuild/FlexiBLAS-3.0.4-GCC-10.3.0-easybuild-devel
+    EBDEVELFOSS=/share/apps/easybuild/software/foss/2021a/easybuild/foss-2021a-easybuild-devel
+    EBDEVELGCC=/share/apps/easybuild/software/GCC/10.3.0/easybuild/GCC-10.3.0-easybuild-devel
+    EBDEVELGCCCORE=/share/apps/easybuild/software/GCCcore/10.3.0/easybuild/GCCcore-10.3.0-easybuild-devel
+    EBDEVELGOMPI=/share/apps/easybuild/software/gompi/2021a/easybuild/gompi-2021a-easybuild-devel
+    EBDEVELHWLOC=/share/apps/easybuild/software/hwloc/2.4.1-GCCcore-10.3.0/easybuild/hwloc-2.4.1-GCCcore-10.3.0-easybuild-devel
+    EBDEVELLIBEVENT=/share/apps/easybuild/software/libevent/2.1.12-GCCcore-10.3.0/easybuild/libevent-2.1.12-GCCcore-10.3.0-easybuild-devel
+    EBDEVELLIBFABRIC=/share/apps/easybuild/software/libfabric/1.12.1-GCCcore-10.3.0/easybuild/libfabric-1.12.1-GCCcore-10.3.0-easybuild-devel
+    EBDEVELLIBPCIACCESS=/share/apps/easybuild/software/libpciaccess/0.16-GCCcore-10.3.0/easybuild/libpciaccess-0.16-GCCcore-10.3.0-easybuild-devel
+    EBDEVELLIBXML2=/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0/easybuild/libxml2-2.9.10-GCCcore-10.3.0-easybuild-devel
+    EBDEVELNUMACTL=/share/apps/easybuild/software/numactl/2.0.14-GCCcore-10.3.0/easybuild/numactl-2.0.14-GCCcore-10.3.0-easybuild-devel
+    EBDEVELOPENBLAS=/share/apps/easybuild/software/OpenBLAS/0.3.15-GCC-10.3.0/easybuild/OpenBLAS-0.3.15-GCC-10.3.0-easybuild-devel
+    EBDEVELOPENMPI=/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/easybuild/OpenMPI-4.1.1-GCC-10.3.0-easybuild-devel
+    EBDEVELPMIX=/share/apps/easybuild/software/PMIx/3.2.3-GCCcore-10.3.0/easybuild/PMIx-3.2.3-GCCcore-10.3.0-easybuild-devel
+    EBDEVELSCALAPACK=/share/apps/easybuild/software/ScaLAPACK/2.1.0-gompi-2021a-fb/easybuild/ScaLAPACK-2.1.0-gompi-2021a-fb-easybuild-devel
+    EBDEVELUCX=/share/apps/easybuild/software/UCX/1.10.0-GCCcore-10.3.0/easybuild/UCX-1.10.0-GCCcore-10.3.0-easybuild-devel
+    EBDEVELZLIB=/share/apps/easybuild/software/zlib/1.2.11-GCCcore-10.3.0/easybuild/zlib-1.2.11-GCCcore-10.3.0-easybuild-devel
+    EBROOTBINUTILS=/share/apps/easybuild/software/binutils/2.36.1-GCCcore-10.3.0
+    EBROOTFFTW=/share/apps/easybuild/software/FFTW/3.3.9-gompi-2021a
+    EBROOTFLEXIBLAS=/share/apps/easybuild/software/FlexiBLAS/3.0.4-GCC-10.3.0
+    EBROOTFOSS=/share/apps/easybuild/software/foss/2021a
+    EBROOTGCC=/share/apps/easybuild/software/GCCcore/10.3.0
+    EBROOTGCCCORE=/share/apps/easybuild/software/GCCcore/10.3.0
+    EBROOTGOMPI=/share/apps/easybuild/software/gompi/2021a
+    EBROOTHWLOC=/share/apps/easybuild/software/hwloc/2.4.1-GCCcore-10.3.0
+    EBROOTLIBEVENT=/share/apps/easybuild/software/libevent/2.1.12-GCCcore-10.3.0
+    EBROOTLIBFABRIC=/share/apps/easybuild/software/libfabric/1.12.1-GCCcore-10.3.0
+    EBROOTLIBPCIACCESS=/share/apps/easybuild/software/libpciaccess/0.16-GCCcore-10.3.0
+    EBROOTLIBXML2=/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0
+    EBROOTNUMACTL=/share/apps/easybuild/software/numactl/2.0.14-GCCcore-10.3.0
+    EBROOTOPENBLAS=/share/apps/easybuild/software/OpenBLAS/0.3.15-GCC-10.3.0
+    EBROOTOPENMPI=/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0
+    EBROOTPMIX=/share/apps/easybuild/software/PMIx/3.2.3-GCCcore-10.3.0
+    EBROOTSCALAPACK=/share/apps/easybuild/software/ScaLAPACK/2.1.0-gompi-2021a-fb
+    EBROOTUCX=/share/apps/easybuild/software/UCX/1.10.0-GCCcore-10.3.0
+    EBROOTZLIB=/share/apps/easybuild/software/zlib/1.2.11-GCCcore-10.3.0
+    EBVERSIONBINUTILS=2.36.1
+    EBVERSIONFFTW=3.3.9
+    EBVERSIONFLEXIBLAS=3.0.4
+    EBVERSIONFOSS=2021a
+    EBVERSIONGCC=10.3.0
+    EBVERSIONGCCCORE=10.3.0
+    EBVERSIONGOMPI=2021a
+    EBVERSIONHWLOC=2.4.1
+    EBVERSIONLIBEVENT=2.1.12
+    EBVERSIONLIBFABRIC=1.12.1
+    EBVERSIONLIBPCIACCESS=0.16
+    EBVERSIONLIBXML2=2.9.10
+    EBVERSIONNUMACTL=2.0.14
+    EBVERSIONOPENBLAS=0.3.15
+    EBVERSIONOPENMPI=4.1.1
+    EBVERSIONPMIX=3.2.3
+    EBVERSIONSCALAPACK=2.1.0
+    EBVERSIONUCX=1.10.0
+    EBVERSIONZLIB=1.2.11
+    HISTCONTROL=ignoredups
+    HISTSIZE=1000
+    HOME=/home/finzeo
+    HOSTNAME=pirayu
+    LANG=en_US.UTF-8
+    LD_LIBRARY_PATH=/share/apps/easybuild/software/OpenBLAS/0.3.15-GCC-10.3.0/lib:/share/apps/easybuild/software/ScaLAPACK/2.1.0-gompi-2021a-fb/lib:/share/apps/easybuild/software/FFTW/3.3.9-gompi-2021a/lib:/share/apps/easybuild/software/FlexiBLAS/3.0.4-GCC-10.3.0/lib:/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/lib:/share/apps/easybuild/software/PMIx/3.2.3-GCCcore-10.3.0/lib:/share/apps/easybuild/software/libfabric/1.12.1-GCCcore-10.3.0/lib:/share/apps/easybuild/software/UCX/1.10.0-GCCcore-10.3.0/lib:/share/apps/easybuild/software/libevent/2.1.12-GCCcore-10.3.0/lib:/share/apps/easybuild/software/hwloc/2.4.1-GCCcore-10.3.0/lib:/share/apps/easybuild/software/libpciaccess/0.16-GCCcore-10.3.0/lib:/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0/lib:/share/apps/easybuild/software/numactl/2.0.14-GCCcore-10.3.0/lib:/share/apps/easybuild/software/binutils/2.36.1-GCCcore-10.3.0/lib:/share/apps/easybuild/software/zlib/1.2.11-GCCcore-10.3.0/lib:/share/apps/easybuild/software/GCCcore/10.3.0/lib64:/share/apps/code_saturne/8.0.0/lib
+    LESSOPEN=||/usr/bin/lesspipe.sh %s
+    LIBRARY_PATH=/share/apps/easybuild/software/OpenBLAS/0.3.15-GCC-10.3.0/lib:/share/apps/easybuild/software/ScaLAPACK/2.1.0-gompi-2021a-fb/lib:/share/apps/easybuild/software/FFTW/3.3.9-gompi-2021a/lib:/share/apps/easybuild/software/FlexiBLAS/3.0.4-GCC-10.3.0/lib:/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/lib:/share/apps/easybuild/software/PMIx/3.2.3-GCCcore-10.3.0/lib:/share/apps/easybuild/software/libfabric/1.12.1-GCCcore-10.3.0/lib:/share/apps/easybuild/software/UCX/1.10.0-GCCcore-10.3.0/lib:/share/apps/easybuild/software/libevent/2.1.12-GCCcore-10.3.0/lib:/share/apps/easybuild/software/hwloc/2.4.1-GCCcore-10.3.0/lib:/share/apps/easybuild/software/libpciaccess/0.16-GCCcore-10.3.0/lib:/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0/lib:/share/apps/easybuild/software/numactl/2.0.14-GCCcore-10.3.0/lib:/share/apps/easybuild/software/binutils/2.36.1-GCCcore-10.3.0/lib:/share/apps/easybuild/software/zlib/1.2.11-GCCcore-10.3.0/lib
+    LMOD_CMD=/opt/ohpc/admin/lmod/lmod/libexec/lmod
+    LMOD_COLORIZE=no
+    LMOD_DIR=/opt/ohpc/admin/lmod/lmod/libexec
+    LMOD_FULL_SETTARG_SUPPORT=no
+    LMOD_PKG=/opt/ohpc/admin/lmod/lmod
+    LMOD_PREPEND_BLOCK=normal
+    LMOD_ROOT=/opt/ohpc/admin/lmod
+    LMOD_SETTARG_CMD=:
+    LMOD_SETTARG_FULL_SUPPORT=no
+    LMOD_SHELL_PRGM=bash
+    LMOD_VERSION=8.7.6
+    LOADEDMODULES=GCCcore/10.3.0:zlib/1.2.11-GCCcore-10.3.0:binutils/2.36.1-GCCcore-10.3.0:GCC/10.3.0:numactl/2.0.14-GCCcore-10.3.0:libxml2/2.9.10-GCCcore-10.3.0:libpciaccess/0.16-GCCcore-10.3.0:hwloc/2.4.1-GCCcore-10.3.0:libevent/2.1.12-GCCcore-10.3.0:UCX/1.10.0-GCCcore-10.3.0:libfabric/1.12.1-GCCcore-10.3.0:PMIx/3.2.3-GCCcore-10.3.0:OpenMPI/4.1.1-GCC-10.3.0:FlexiBLAS/3.0.4-GCC-10.3.0:gompi/2021a:FFTW/3.3.9-gompi-2021a:ScaLAPACK/2.1.0-gompi-2021a-fb:foss/2021a:OpenBLAS/0.3.15-GCC-10.3.0
+    LOGNAME=finzeo
+    LS_COLORS=rs=0:di=38;5;33:ln=38;5;51:mh=00:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=01;05;37;41:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;40:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.zst=38;5;9:*.tzst=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.wim=38;5;9:*.swm=38;5;9:*.dwm=38;5;9:*.esd=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.mjpg=38;5;13:*.mjpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.m4a=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.oga=38;5;45:*.opus=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:
+    MAIL=/var/spool/mail/finzeo
+    MANPATH=/share/apps/easybuild/software/FFTW/3.3.9-gompi-2021a/share/man:/share/apps/easybuild/software/FlexiBLAS/3.0.4-GCC-10.3.0/share/man:/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/share/man:/share/apps/easybuild/software/libfabric/1.12.1-GCCcore-10.3.0/share/man:/share/apps/easybuild/software/hwloc/2.4.1-GCCcore-10.3.0/share/man:/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0/share/man:/share/apps/easybuild/software/numactl/2.0.14-GCCcore-10.3.0/share/man:/share/apps/easybuild/software/binutils/2.36.1-GCCcore-10.3.0/share/man:/share/apps/easybuild/software/zlib/1.2.11-GCCcore-10.3.0/share/man:/share/apps/easybuild/software/GCCcore/10.3.0/share/man
+    MODULEPATH=/etc/scl/modulefiles:/opt/ohpc/pub/modulefiles:/share/apps/easybuild/modules/all
+    MODULESHOME=/usr/share/Modules
+    OLDPWD=/home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test
+    PATH=/share/apps/easybuild/software/FFTW/3.3.9-gompi-2021a/bin:/share/apps/easybuild/software/FlexiBLAS/3.0.4-GCC-10.3.0/bin:/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/bin:/share/apps/easybuild/software/PMIx/3.2.3-GCCcore-10.3.0/bin:/share/apps/easybuild/software/libfabric/1.12.1-GCCcore-10.3.0/bin:/share/apps/easybuild/software/UCX/1.10.0-GCCcore-10.3.0/bin:/share/apps/easybuild/software/libevent/2.1.12-GCCcore-10.3.0/bin:/share/apps/easybuild/software/hwloc/2.4.1-GCCcore-10.3.0/sbin:/share/apps/easybuild/software/hwloc/2.4.1-GCCcore-10.3.0/bin:/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0/bin:/share/apps/easybuild/software/numactl/2.0.14-GCCcore-10.3.0/bin:/share/apps/easybuild/software/binutils/2.36.1-GCCcore-10.3.0/bin:/share/apps/easybuild/software/GCCcore/10.3.0/bin:/home/finzeo/.local/bin:/home/finzeo/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+    PKG_CONFIG_PATH=/share/apps/easybuild/software/OpenBLAS/0.3.15-GCC-10.3.0/lib/pkgconfig:/share/apps/easybuild/software/ScaLAPACK/2.1.0-gompi-2021a-fb/lib/pkgconfig:/share/apps/easybuild/software/FFTW/3.3.9-gompi-2021a/lib/pkgconfig:/share/apps/easybuild/software/FlexiBLAS/3.0.4-GCC-10.3.0/lib/pkgconfig:/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/lib/pkgconfig:/share/apps/easybuild/software/PMIx/3.2.3-GCCcore-10.3.0/lib/pkgconfig:/share/apps/easybuild/software/libfabric/1.12.1-GCCcore-10.3.0/lib/pkgconfig:/share/apps/easybuild/software/UCX/1.10.0-GCCcore-10.3.0/lib/pkgconfig:/share/apps/easybuild/software/libevent/2.1.12-GCCcore-10.3.0/lib/pkgconfig:/share/apps/easybuild/software/hwloc/2.4.1-GCCcore-10.3.0/lib/pkgconfig:/share/apps/easybuild/software/libpciaccess/0.16-GCCcore-10.3.0/lib/pkgconfig:/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0/lib/pkgconfig:/share/apps/easybuild/software/numactl/2.0.14-GCCcore-10.3.0/lib/pkgconfig:/share/apps/easybuild/software/zlib/1.2.11-GCCcore-10.3.0/lib/pkgconfig
+    PULSE_CLIENTCONFIG=/home/finzeo/.x2go/C-finzeo-127-1690909662_stDXFCE_dp24/.pulse-client.conf
+    PWD=/home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/DATA
+    QT_GRAPHICSSYSTEM=native
+    SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/2250359,unix/unix:/tmp/.ICE-unix/2250359
+    SHELL=/bin/bash
+    SHLVL=7
+    SSH_AGENT_PID=2250575
+    SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+    SSH_AUTH_SOCK=/tmp/ssh-2U6y3zgkS6rB/agent.2250359
+    SSH_CLIENT=172.16.255.70 56446 22
+    SSH_CONNECTION=172.16.255.70 56446 172.16.254.98 22
+    STARTUP=/usr/bin/env LD_LIBRARY_PATH= xfce4-session
+    S_COLORS=auto
+    TERM=xterm-256color
+    USER=finzeo
+    VTE_VERSION=5204
+    WINDOWID=44061826
+    X2GO_AGENT_PID=2249420
+    X2GO_SESSION=finzeo-127-1690909662_stDXFCE_dp24
+    XAUTHORITY=/home/finzeo/.Xauthority
+    XDG_DATA_DIRS=/share/apps/easybuild/software/FFTW/3.3.9-gompi-2021a/share:/share/apps/easybuild/software/FlexiBLAS/3.0.4-GCC-10.3.0/share:/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/share:/share/apps/easybuild/software/PMIx/3.2.3-GCCcore-10.3.0/share:/share/apps/easybuild/software/libfabric/1.12.1-GCCcore-10.3.0/share:/share/apps/easybuild/software/UCX/1.10.0-GCCcore-10.3.0/share:/share/apps/easybuild/software/hwloc/2.4.1-GCCcore-10.3.0/share:/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0/share:/share/apps/easybuild/software/numactl/2.0.14-GCCcore-10.3.0/share:/share/apps/easybuild/software/binutils/2.36.1-GCCcore-10.3.0/share:/share/apps/easybuild/software/zlib/1.2.11-GCCcore-10.3.0/share:/share/apps/easybuild/software/GCCcore/10.3.0/share:/home/finzeo/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+    XDG_RUNTIME_DIR=/run/user/1774
+    XDG_SESSION_ID=128
+    XSESSION_EXEC=xfce4-session
+    _=/share/apps/code_saturne/8.0.0/bin/code_saturne
+    _LMFILES_=/share/apps/easybuild/modules/all/GCCcore/10.3.0.lua:/share/apps/easybuild/modules/all/zlib/1.2.11-GCCcore-10.3.0.lua:/share/apps/easybuild/modules/all/binutils/2.36.1-GCCcore-10.3.0.lua:/share/apps/easybuild/modules/all/GCC/10.3.0.lua:/share/apps/easybuild/modules/all/numactl/2.0.14-GCCcore-10.3.0.lua:/share/apps/easybuild/modules/all/libxml2/2.9.10-GCCcore-10.3.0.lua:/share/apps/easybuild/modules/all/libpciaccess/0.16-GCCcore-10.3.0.lua:/share/apps/easybuild/modules/all/hwloc/2.4.1-GCCcore-10.3.0.lua:/share/apps/easybuild/modules/all/libevent/2.1.12-GCCcore-10.3.0.lua:/share/apps/easybuild/modules/all/UCX/1.10.0-GCCcore-10.3.0.lua:/share/apps/easybuild/modules/all/libfabric/1.12.1-GCCcore-10.3.0.lua:/share/apps/easybuild/modules/all/PMIx/3.2.3-GCCcore-10.3.0.lua:/share/apps/easybuild/modules/all/OpenMPI/4.1.1-GCC-10.3.0.lua:/share/apps/easybuild/modules/all/FlexiBLAS/3.0.4-GCC-10.3.0.lua:/share/apps/easybuild/modules/all/gompi/2021a.lua:/share/apps/easybuild/modules/all/FFTW/3.3.9-gompi-2021a.lua:/share/apps/easybuild/modules/all/ScaLAPACK/2.1.0-gompi-2021a-fb.lua:/share/apps/easybuild/modules/all/foss/2021a.lua:/share/apps/easybuild/modules/all/OpenBLAS/0.3.15-GCC-10.3.0.lua
+    _ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0ge30sCm1UID0gewpGRlRXID0gewpmbiA9ICIvc2hhcmUvYXBwcy9lYXN5YnVpbGQvbW9kdWxlcy9hbGwvRkZUVy8zLjMuOS1nb21waS0yMDIxYS5sdWEiLApmdWxsTmFtZSA9ICJGRlRXLzMuMy45LWdvbXBpLTIwMjFhIiwKbG9hZE9yZGVyID0gMTYsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiRkZUVy8zLjMuOS1nb21waS0yMDIxYSIsCndWID0gIjAwMDAwMDAwMy4wMDAwMDAwMDMuMDAwMDAwMDA5Lipnb21waS4qemZpbmFsLS4wMDAwMDIw
+    _ModuleTable002_=MjEuKmEuKnpmaW5hbCIsCn0sCkZsZXhpQkxBUyA9IHsKZm4gPSAiL3NoYXJlL2FwcHMvZWFzeWJ1aWxkL21vZHVsZXMvYWxsL0ZsZXhpQkxBUy8zLjAuNC1HQ0MtMTAuMy4wLmx1YSIsCmZ1bGxOYW1lID0gIkZsZXhpQkxBUy8zLjAuNC1HQ0MtMTAuMy4wIiwKbG9hZE9yZGVyID0gMTQsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiRmxleGlCTEFTLzMuMC40LUdDQy0xMC4zLjAiLAp3ViA9ICIwMDAwMDAwMDMuMDAwMDAwMDAwLjAwMDAwMDAwNC4qZ2NjLip6ZmluYWwtLjAwMDAwMDAxMC4wMDAwMDAwMDMuKnpmaW5hbCIsCn0sCkdDQyA9IHsKZm4gPSAiL3NoYXJlL2FwcHMvZWFzeWJ1aWxkL21vZHVsZXMvYWxsL0dD
+    _ModuleTable003_=Qy8xMC4zLjAubHVhIiwKZnVsbE5hbWUgPSAiR0NDLzEwLjMuMCIsCmxvYWRPcmRlciA9IDQsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiR0NDLzEwLjMuMCIsCndWID0gIjAwMDAwMDAxMC4wMDAwMDAwMDMuKnpmaW5hbCIsCn0sCkdDQ2NvcmUgPSB7CmZuID0gIi9zaGFyZS9hcHBzL2Vhc3lidWlsZC9tb2R1bGVzL2FsbC9HQ0Njb3JlLzEwLjMuMC5sdWEiLApmdWxsTmFtZSA9ICJHQ0Njb3JlLzEwLjMuMCIsCmxvYWRPcmRlciA9IDEsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiR0NDY29yZS8xMC4zLjAiLAp3ViA9ICIwMDAwMDAwMTAuMDAwMDAwMDAz
+    _ModuleTable004_=Lip6ZmluYWwiLAp9LApPcGVuQkxBUyA9IHsKZm4gPSAiL3NoYXJlL2FwcHMvZWFzeWJ1aWxkL21vZHVsZXMvYWxsL09wZW5CTEFTLzAuMy4xNS1HQ0MtMTAuMy4wLmx1YSIsCmZ1bGxOYW1lID0gIk9wZW5CTEFTLzAuMy4xNS1HQ0MtMTAuMy4wIiwKbG9hZE9yZGVyID0gMTksCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiT3BlbkJMQVMvMC4zLjE1LUdDQy0xMC4zLjAiLAp3ViA9ICIwMDAwMDAwMDAuMDAwMDAwMDAzLjAwMDAwMDAxNS4qZ2NjLip6ZmluYWwtLjAwMDAwMDAxMC4wMDAwMDAwMDMuKnpmaW5hbCIsCn0sCk9wZW5NUEkgPSB7CmZuID0gIi9zaGFyZS9hcHBzL2Vhc3lidWlsZC9tb2R1bGVzL2FsbC9PcGVu
+    _ModuleTable005_=TVBJLzQuMS4xLUdDQy0xMC4zLjAubHVhIiwKZnVsbE5hbWUgPSAiT3Blbk1QSS80LjEuMS1HQ0MtMTAuMy4wIiwKbG9hZE9yZGVyID0gMTMsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiT3Blbk1QSS80LjEuMS1HQ0MtMTAuMy4wIiwKd1YgPSAiMDAwMDAwMDA0LjAwMDAwMDAwMS4wMDAwMDAwMDEuKmdjYy4qemZpbmFsLS4wMDAwMDAwMTAuMDAwMDAwMDAzLip6ZmluYWwiLAp9LApQTUl4ID0gewpmbiA9ICIvc2hhcmUvYXBwcy9lYXN5YnVpbGQvbW9kdWxlcy9hbGwvUE1JeC8zLjIuMy1HQ0Njb3JlLTEwLjMuMC5sdWEiLApmdWxsTmFtZSA9ICJQTUl4LzMuMi4zLUdDQ2NvcmUtMTAuMy4wIiwKbG9hZE9yZGVyID0g
+    _ModuleTable006_=MTIsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiUE1JeC8zLjIuMy1HQ0Njb3JlLTEwLjMuMCIsCndWID0gIjAwMDAwMDAwMy4wMDAwMDAwMDIuMDAwMDAwMDAzLipnY2Njb3JlLip6ZmluYWwtLjAwMDAwMDAxMC4wMDAwMDAwMDMuKnpmaW5hbCIsCn0sClNjYUxBUEFDSyA9IHsKZm4gPSAiL3NoYXJlL2FwcHMvZWFzeWJ1aWxkL21vZHVsZXMvYWxsL1NjYUxBUEFDSy8yLjEuMC1nb21waS0yMDIxYS1mYi5sdWEiLApmdWxsTmFtZSA9ICJTY2FMQVBBQ0svMi4xLjAtZ29tcGktMjAyMWEtZmIiLApsb2FkT3JkZXIgPSAxNywKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFt
+    _ModuleTable007_=ZSA9ICJTY2FMQVBBQ0svMi4xLjAtZ29tcGktMjAyMWEtZmIiLAp3ViA9ICIwMDAwMDAwMDIuMDAwMDAwMDAxLipnb21waS4qemZpbmFsLS4wMDAwMDIwMjEuKmEuKmZiLip6ZmluYWwiLAp9LApVQ1ggPSB7CmZuID0gIi9zaGFyZS9hcHBzL2Vhc3lidWlsZC9tb2R1bGVzL2FsbC9VQ1gvMS4xMC4wLUdDQ2NvcmUtMTAuMy4wLmx1YSIsCmZ1bGxOYW1lID0gIlVDWC8xLjEwLjAtR0NDY29yZS0xMC4zLjAiLApsb2FkT3JkZXIgPSAxMCwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJVQ1gvMS4xMC4wLUdDQ2NvcmUtMTAuMy4wIiwKd1YgPSAiMDAwMDAwMDAxLjAwMDAwMDAxMC4qZ2NjY29yZS4qemZpbmFsLS4wMDAwMDAw
+    _ModuleTable008_=MTAuMDAwMDAwMDAzLip6ZmluYWwiLAp9LApiaW51dGlscyA9IHsKZm4gPSAiL3NoYXJlL2FwcHMvZWFzeWJ1aWxkL21vZHVsZXMvYWxsL2JpbnV0aWxzLzIuMzYuMS1HQ0Njb3JlLTEwLjMuMC5sdWEiLApmdWxsTmFtZSA9ICJiaW51dGlscy8yLjM2LjEtR0NDY29yZS0xMC4zLjAiLApsb2FkT3JkZXIgPSAzLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImJpbnV0aWxzLzIuMzYuMS1HQ0Njb3JlLTEwLjMuMCIsCndWID0gIjAwMDAwMDAwMi4wMDAwMDAwMzYuMDAwMDAwMDAxLipnY2Njb3JlLip6ZmluYWwtLjAwMDAwMDAxMC4wMDAwMDAwMDMuKnpmaW5hbCIsCn0sCmZvc3MgPSB7CmZuID0gIi9zaGFyZS9hcHBzL2Vh
+    _ModuleTable009_=c3lidWlsZC9tb2R1bGVzL2FsbC9mb3NzLzIwMjFhLmx1YSIsCmZ1bGxOYW1lID0gImZvc3MvMjAyMWEiLApsb2FkT3JkZXIgPSAxOCwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJmb3NzLzIwMjFhIiwKd1YgPSAiMDAwMDAyMDIxLiphLip6ZmluYWwiLAp9LApnb21waSA9IHsKZm4gPSAiL3NoYXJlL2FwcHMvZWFzeWJ1aWxkL21vZHVsZXMvYWxsL2dvbXBpLzIwMjFhLmx1YSIsCmZ1bGxOYW1lID0gImdvbXBpLzIwMjFhIiwKbG9hZE9yZGVyID0gMTUsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiZ29tcGkvMjAyMWEiLAp3ViA9ICIwMDAwMDIwMjEuKmEu
+    _ModuleTable010_=KnpmaW5hbCIsCn0sCmh3bG9jID0gewpmbiA9ICIvc2hhcmUvYXBwcy9lYXN5YnVpbGQvbW9kdWxlcy9hbGwvaHdsb2MvMi40LjEtR0NDY29yZS0xMC4zLjAubHVhIiwKZnVsbE5hbWUgPSAiaHdsb2MvMi40LjEtR0NDY29yZS0xMC4zLjAiLApsb2FkT3JkZXIgPSA4LApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImh3bG9jLzIuNC4xLUdDQ2NvcmUtMTAuMy4wIiwKd1YgPSAiMDAwMDAwMDAyLjAwMDAwMDAwNC4wMDAwMDAwMDEuKmdjY2NvcmUuKnpmaW5hbC0uMDAwMDAwMDEwLjAwMDAwMDAwMy4qemZpbmFsIiwKfSwKbGliZXZlbnQgPSB7CmZuID0gIi9zaGFyZS9hcHBzL2Vhc3lidWlsZC9tb2R1bGVzL2FsbC9saWJl
+    _ModuleTable011_=dmVudC8yLjEuMTItR0NDY29yZS0xMC4zLjAubHVhIiwKZnVsbE5hbWUgPSAibGliZXZlbnQvMi4xLjEyLUdDQ2NvcmUtMTAuMy4wIiwKbG9hZE9yZGVyID0gOSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJsaWJldmVudC8yLjEuMTItR0NDY29yZS0xMC4zLjAiLAp3ViA9ICIwMDAwMDAwMDIuMDAwMDAwMDAxLjAwMDAwMDAxMi4qZ2NjY29yZS4qemZpbmFsLS4wMDAwMDAwMTAuMDAwMDAwMDAzLip6ZmluYWwiLAp9LApsaWJmYWJyaWMgPSB7CmZuID0gIi9zaGFyZS9hcHBzL2Vhc3lidWlsZC9tb2R1bGVzL2FsbC9saWJmYWJyaWMvMS4xMi4xLUdDQ2NvcmUtMTAuMy4wLmx1YSIsCmZ1bGxOYW1lID0gImxpYmZhYnJp
+    _ModuleTable012_=Yy8xLjEyLjEtR0NDY29yZS0xMC4zLjAiLApsb2FkT3JkZXIgPSAxMSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJsaWJmYWJyaWMvMS4xMi4xLUdDQ2NvcmUtMTAuMy4wIiwKd1YgPSAiMDAwMDAwMDAxLjAwMDAwMDAxMi4wMDAwMDAwMDEuKmdjY2NvcmUuKnpmaW5hbC0uMDAwMDAwMDEwLjAwMDAwMDAwMy4qemZpbmFsIiwKfSwKbGlicGNpYWNjZXNzID0gewpmbiA9ICIvc2hhcmUvYXBwcy9lYXN5YnVpbGQvbW9kdWxlcy9hbGwvbGlicGNpYWNjZXNzLzAuMTYtR0NDY29yZS0xMC4zLjAubHVhIiwKZnVsbE5hbWUgPSAibGlicGNpYWNjZXNzLzAuMTYtR0NDY29yZS0xMC4zLjAiLApsb2FkT3JkZXIgPSA3LApwcm9w
+    _ModuleTable013_=VCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImxpYnBjaWFjY2Vzcy8wLjE2LUdDQ2NvcmUtMTAuMy4wIiwKd1YgPSAiMDAwMDAwMDAwLjAwMDAwMDAxNi4qZ2NjY29yZS4qemZpbmFsLS4wMDAwMDAwMTAuMDAwMDAwMDAzLip6ZmluYWwiLAp9LApsaWJ4bWwyID0gewpmbiA9ICIvc2hhcmUvYXBwcy9lYXN5YnVpbGQvbW9kdWxlcy9hbGwvbGlieG1sMi8yLjkuMTAtR0NDY29yZS0xMC4zLjAubHVhIiwKZnVsbE5hbWUgPSAibGlieG1sMi8yLjkuMTAtR0NDY29yZS0xMC4zLjAiLApsb2FkT3JkZXIgPSA2LApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImxpYnhtbDIvMi45
+    _ModuleTable014_=LjEwLUdDQ2NvcmUtMTAuMy4wIiwKd1YgPSAiMDAwMDAwMDAyLjAwMDAwMDAwOS4wMDAwMDAwMTAuKmdjY2NvcmUuKnpmaW5hbC0uMDAwMDAwMDEwLjAwMDAwMDAwMy4qemZpbmFsIiwKfSwKbnVtYWN0bCA9IHsKZm4gPSAiL3NoYXJlL2FwcHMvZWFzeWJ1aWxkL21vZHVsZXMvYWxsL251bWFjdGwvMi4wLjE0LUdDQ2NvcmUtMTAuMy4wLmx1YSIsCmZ1bGxOYW1lID0gIm51bWFjdGwvMi4wLjE0LUdDQ2NvcmUtMTAuMy4wIiwKbG9hZE9yZGVyID0gNSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJudW1hY3RsLzIuMC4xNC1HQ0Njb3JlLTEwLjMuMCIsCndWID0gIjAwMDAwMDAwMi4wMDAwMDAwMDAuMDAwMDAwMDE0Lipn
+    _ModuleTable015_=Y2Njb3JlLip6ZmluYWwtLjAwMDAwMDAxMC4wMDAwMDAwMDMuKnpmaW5hbCIsCn0sCnpsaWIgPSB7CmZuID0gIi9zaGFyZS9hcHBzL2Vhc3lidWlsZC9tb2R1bGVzL2FsbC96bGliLzEuMi4xMS1HQ0Njb3JlLTEwLjMuMC5sdWEiLApmdWxsTmFtZSA9ICJ6bGliLzEuMi4xMS1HQ0Njb3JlLTEwLjMuMCIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAiemxpYi8xLjIuMTEtR0NDY29yZS0xMC4zLjAiLAp3ViA9ICIwMDAwMDAwMDEuMDAwMDAwMDAyLjAwMDAwMDAxMS4qZ2NjY29yZS4qemZpbmFsLS4wMDAwMDAwMTAuMDAwMDAwMDAzLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvZXRjL3Nj
+    _ModuleTable016_=bC9tb2R1bGVmaWxlcyIsICIvb3B0L29ocGMvcHViL21vZHVsZWZpbGVzIiwgIi9zaGFyZS9hcHBzL2Vhc3lidWlsZC9tb2R1bGVzL2FsbCIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvb3B0L29ocGMvcHViL21vZHVsZWZpbGVzIiwKfQo=
+    _ModuleTable_Sz_=16
+    __LMOD_REF_COUNT_ACLOCAL_PATH=/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0/share/aclocal:1
+    __LMOD_REF_COUNT_CMAKE_LIBRARY_PATH=/share/apps/easybuild/software/GCCcore/10.3.0/lib64:1
+    __LMOD_REF_COUNT_CMAKE_PREFIX_PATH=/share/apps/easybuild/software/OpenBLAS/0.3.15-GCC-10.3.0:1;/share/apps/easybuild/software/ScaLAPACK/2.1.0-gompi-2021a-fb:1;/share/apps/easybuild/software/FFTW/3.3.9-gompi-2021a:1;/share/apps/easybuild/software/FlexiBLAS/3.0.4-GCC-10.3.0:1;/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0:1;/share/apps/easybuild/software/PMIx/3.2.3-GCCcore-10.3.0:1;/share/apps/easybuild/software/libfabric/1.12.1-GCCcore-10.3.0:1;/share/apps/easybuild/software/UCX/1.10.0-GCCcore-10.3.0:1;/share/apps/easybuild/software/libevent/2.1.12-GCCcore-10.3.0:1;/share/apps/easybuild/software/hwloc/2.4.1-GCCcore-10.3.0:1;/share/apps/easybuild/software/libpciaccess/0.16-GCCcore-10.3.0:1;/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0:1;/share/apps/easybuild/software/numactl/2.0.14-GCCcore-10.3.0:1;/share/apps/easybuild/software/binutils/2.36.1-GCCcore-10.3.0:1;/share/apps/easybuild/software/zlib/1.2.11-GCCcore-10.3.0:1;/share/apps/easybuild/software/GCCcore/10.3.0:1
+    __LMOD_REF_COUNT_CPATH=/share/apps/easybuild/software/OpenBLAS/0.3.15-GCC-10.3.0/include:1;/share/apps/easybuild/software/FFTW/3.3.9-gompi-2021a/include:1;/share/apps/easybuild/software/FlexiBLAS/3.0.4-GCC-10.3.0/include/flexiblas:1;/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/include:1;/share/apps/easybuild/software/PMIx/3.2.3-GCCcore-10.3.0/include:1;/share/apps/easybuild/software/libfabric/1.12.1-GCCcore-10.3.0/include:1;/share/apps/easybuild/software/UCX/1.10.0-GCCcore-10.3.0/include:1;/share/apps/easybuild/software/libevent/2.1.12-GCCcore-10.3.0/include:1;/share/apps/easybuild/software/hwloc/2.4.1-GCCcore-10.3.0/include:1;/share/apps/easybuild/software/libpciaccess/0.16-GCCcore-10.3.0/include:1;/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0/include/libxml2:1;/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0/include:1;/share/apps/easybuild/software/numactl/2.0.14-GCCcore-10.3.0/include:1;/share/apps/easybuild/software/binutils/2.36.1-GCCcore-10.3.0/include:1;/share/apps/easybuild/software/zlib/1.2.11-GCCcore-10.3.0/include:1
+    __LMOD_REF_COUNT_LD_LIBRARY_PATH=/share/apps/easybuild/software/OpenBLAS/0.3.15-GCC-10.3.0/lib:1;/share/apps/easybuild/software/ScaLAPACK/2.1.0-gompi-2021a-fb/lib:1;/share/apps/easybuild/software/FFTW/3.3.9-gompi-2021a/lib:1;/share/apps/easybuild/software/FlexiBLAS/3.0.4-GCC-10.3.0/lib:1;/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/lib:1;/share/apps/easybuild/software/PMIx/3.2.3-GCCcore-10.3.0/lib:1;/share/apps/easybuild/software/libfabric/1.12.1-GCCcore-10.3.0/lib:1;/share/apps/easybuild/software/UCX/1.10.0-GCCcore-10.3.0/lib:1;/share/apps/easybuild/software/libevent/2.1.12-GCCcore-10.3.0/lib:1;/share/apps/easybuild/software/hwloc/2.4.1-GCCcore-10.3.0/lib:1;/share/apps/easybuild/software/libpciaccess/0.16-GCCcore-10.3.0/lib:1;/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0/lib:1;/share/apps/easybuild/software/numactl/2.0.14-GCCcore-10.3.0/lib:1;/share/apps/easybuild/software/binutils/2.36.1-GCCcore-10.3.0/lib:1;/share/apps/easybuild/software/zlib/1.2.11-GCCcore-10.3.0/lib:1;/share/apps/easybuild/software/GCCcore/10.3.0/lib64:1;/share/apps/code_saturne/8.0.0/lib:3
+    __LMOD_REF_COUNT_LIBRARY_PATH=/share/apps/easybuild/software/OpenBLAS/0.3.15-GCC-10.3.0/lib:1;/share/apps/easybuild/software/ScaLAPACK/2.1.0-gompi-2021a-fb/lib:1;/share/apps/easybuild/software/FFTW/3.3.9-gompi-2021a/lib:1;/share/apps/easybuild/software/FlexiBLAS/3.0.4-GCC-10.3.0/lib:1;/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/lib:1;/share/apps/easybuild/software/PMIx/3.2.3-GCCcore-10.3.0/lib:1;/share/apps/easybuild/software/libfabric/1.12.1-GCCcore-10.3.0/lib:1;/share/apps/easybuild/software/UCX/1.10.0-GCCcore-10.3.0/lib:1;/share/apps/easybuild/software/libevent/2.1.12-GCCcore-10.3.0/lib:1;/share/apps/easybuild/software/hwloc/2.4.1-GCCcore-10.3.0/lib:1;/share/apps/easybuild/software/libpciaccess/0.16-GCCcore-10.3.0/lib:1;/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0/lib:1;/share/apps/easybuild/software/numactl/2.0.14-GCCcore-10.3.0/lib:1;/share/apps/easybuild/software/binutils/2.36.1-GCCcore-10.3.0/lib:1;/share/apps/easybuild/software/zlib/1.2.11-GCCcore-10.3.0/lib:1
+    __LMOD_REF_COUNT_MANPATH=/share/apps/easybuild/software/FFTW/3.3.9-gompi-2021a/share/man:1;/share/apps/easybuild/software/FlexiBLAS/3.0.4-GCC-10.3.0/share/man:1;/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/share/man:1;/share/apps/easybuild/software/libfabric/1.12.1-GCCcore-10.3.0/share/man:1;/share/apps/easybuild/software/hwloc/2.4.1-GCCcore-10.3.0/share/man:1;/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0/share/man:1;/share/apps/easybuild/software/numactl/2.0.14-GCCcore-10.3.0/share/man:1;/share/apps/easybuild/software/binutils/2.36.1-GCCcore-10.3.0/share/man:1;/share/apps/easybuild/software/zlib/1.2.11-GCCcore-10.3.0/share/man:1;/share/apps/easybuild/software/GCCcore/10.3.0/share/man:1
+    __LMOD_REF_COUNT_MODULEPATH=/etc/scl/modulefiles:1;/opt/ohpc/pub/modulefiles:1;/share/apps/easybuild/modules/all:1
+    __LMOD_REF_COUNT_PATH=/share/apps/easybuild/software/FFTW/3.3.9-gompi-2021a/bin:1;/share/apps/easybuild/software/FlexiBLAS/3.0.4-GCC-10.3.0/bin:1;/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/bin:1;/share/apps/easybuild/software/PMIx/3.2.3-GCCcore-10.3.0/bin:1;/share/apps/easybuild/software/libfabric/1.12.1-GCCcore-10.3.0/bin:1;/share/apps/easybuild/software/UCX/1.10.0-GCCcore-10.3.0/bin:1;/share/apps/easybuild/software/libevent/2.1.12-GCCcore-10.3.0/bin:1;/share/apps/easybuild/software/hwloc/2.4.1-GCCcore-10.3.0/sbin:1;/share/apps/easybuild/software/hwloc/2.4.1-GCCcore-10.3.0/bin:1;/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0/bin:1;/share/apps/easybuild/software/numactl/2.0.14-GCCcore-10.3.0/bin:1;/share/apps/easybuild/software/binutils/2.36.1-GCCcore-10.3.0/bin:1;/share/apps/easybuild/software/GCCcore/10.3.0/bin:1;/home/finzeo/.local/bin:1;/home/finzeo/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1
+    __LMOD_REF_COUNT_PKG_CONFIG_PATH=/share/apps/easybuild/software/OpenBLAS/0.3.15-GCC-10.3.0/lib/pkgconfig:1;/share/apps/easybuild/software/ScaLAPACK/2.1.0-gompi-2021a-fb/lib/pkgconfig:1;/share/apps/easybuild/software/FFTW/3.3.9-gompi-2021a/lib/pkgconfig:1;/share/apps/easybuild/software/FlexiBLAS/3.0.4-GCC-10.3.0/lib/pkgconfig:1;/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/lib/pkgconfig:1;/share/apps/easybuild/software/PMIx/3.2.3-GCCcore-10.3.0/lib/pkgconfig:1;/share/apps/easybuild/software/libfabric/1.12.1-GCCcore-10.3.0/lib/pkgconfig:1;/share/apps/easybuild/software/UCX/1.10.0-GCCcore-10.3.0/lib/pkgconfig:1;/share/apps/easybuild/software/libevent/2.1.12-GCCcore-10.3.0/lib/pkgconfig:1;/share/apps/easybuild/software/hwloc/2.4.1-GCCcore-10.3.0/lib/pkgconfig:1;/share/apps/easybuild/software/libpciaccess/0.16-GCCcore-10.3.0/lib/pkgconfig:1;/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0/lib/pkgconfig:1;/share/apps/easybuild/software/numactl/2.0.14-GCCcore-10.3.0/lib/pkgconfig:1;/share/apps/easybuild/software/zlib/1.2.11-GCCcore-10.3.0/lib/pkgconfig:1
+    __LMOD_REF_COUNT_XDG_DATA_DIRS=/share/apps/easybuild/software/FFTW/3.3.9-gompi-2021a/share:1;/share/apps/easybuild/software/FlexiBLAS/3.0.4-GCC-10.3.0/share:1;/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/share:1;/share/apps/easybuild/software/PMIx/3.2.3-GCCcore-10.3.0/share:1;/share/apps/easybuild/software/libfabric/1.12.1-GCCcore-10.3.0/share:1;/share/apps/easybuild/software/UCX/1.10.0-GCCcore-10.3.0/share:1;/share/apps/easybuild/software/hwloc/2.4.1-GCCcore-10.3.0/share:1;/share/apps/easybuild/software/libxml2/2.9.10-GCCcore-10.3.0/share:1;/share/apps/easybuild/software/numactl/2.0.14-GCCcore-10.3.0/share:1;/share/apps/easybuild/software/binutils/2.36.1-GCCcore-10.3.0/share:1;/share/apps/easybuild/software/zlib/1.2.11-GCCcore-10.3.0/share:1;/share/apps/easybuild/software/GCCcore/10.3.0/share:1;/home/finzeo/.local/share/flatpak/exports/share:1;/var/lib/flatpak/exports/share:1;/usr/local/share:1;/usr/share:1
+    which_declare=declare -f
+  ----------------------------------------------------
+  Case           : 01_Init_test
+    directory    : /home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test
+    results dir. : /home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run15
+    preprocessor : /share/apps/code_saturne/8.0.0/libexec/code_saturne/cs_preprocess
+    solver       : ./cs_solver
+  ----------------------------------------------------

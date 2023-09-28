@@ -1,0 +1,29 @@
+SIGABRT signal (abort) intercepted.
+
+Call stack:
+   1: 0x7fb71539facf <gsignal+0x10f>                  (libc.so.6)
+   2: 0x7fb715372ea5 <abort+0x127>                    (libc.so.6)
+   3: 0x7fb6fccad715 <+0x1f715>                       (libucs.so.0)
+   4: 0x7fb6fccb0fd3 <+0x22fd3>                       (libucs.so.0)
+   5: 0x7fb6fccb1101 <ucs_log_dispatch+0xd1>          (libucs.so.0)
+   6: 0x7fb6fcaed070 <uct_ib_mlx5_completion_with_err+0x5c0> (libuct_ib.so.0)
+   7: 0x7fb6fcb0f641 <+0x44641>                       (libuct_ib.so.0)
+   8: 0x7fb71404cc2a <ucp_worker_progress+0x5a>       (libucp.so.0)
+   9: 0x7fb71521678b <opal_progress+0x2b>             (libopen-pal.so.40)
+  10: 0x7fb71521c875 <ompi_sync_wait_mt+0xb5>         (libopen-pal.so.40)
+  11: 0x7fb7181f767b <ompi_request_default_wait+0x20b> (libmpi.so.40)
+  12: 0x7fb718245d67 <ompi_coll_base_bcast_intra_generic+0x5e7> (libmpi.so.40)
+  13: 0x7fb718245ece <ompi_coll_base_bcast_intra_bintree+0xae> (libmpi.so.40)
+  14: 0x7fb6fc23a34c <ompi_coll_tuned_bcast_intra_dec_fixed+0x3c> (mca_coll_tuned.so)
+  15: 0x7fb6fc239baa <ompi_coll_tuned_allreduce_intra_dec_fixed+0x4a> (mca_coll_tuned.so)
+  16: 0x7fb7182077c0 <PMPI_Allreduce+0xf0>            (libmpi.so.40)
+  17: 0x7fb71721828b <cs_gdot+0x4b>                   (libsaturne-8.0.so)
+  18: 0x7fb716e9e715 <cs_equation_iterative_solve_scalar+0x575> (libsaturne-8.0.so)
+  19: 0x7fb71743a783 <cs_turbulence_kw+0x1733>        (libsaturne-8.0.so)
+  20: 0x7fb716fe307e <tridim_+0x3b3a>                 (libsaturne-8.0.so)
+  21: 0x7fb716e1bc59 <caltri_+0x171a>                 (libsaturne-8.0.so)
+  22: 0x7fb7182eb270 <main+0x760>                     (libcs_solver-8.0.so)
+  23: 0x7fb71538bd85 <__libc_start_main+0xe5>         (libc.so.6)
+  24: 0x401c4e     <_start+0x2e>                    (cs_solver)
+End of stack
+

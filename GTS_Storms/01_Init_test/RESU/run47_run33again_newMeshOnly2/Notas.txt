@@ -1,0 +1,3 @@
+Se hizo este caso por sobre el anterior, con el objetivo de mejorar la evolución de los residuos
+Si bien el de presión dejó de oscilar, no así el de omega
+Se intentará mejorar esto en el que viene, bajando el blending factor asociado al esquema de advección de omega

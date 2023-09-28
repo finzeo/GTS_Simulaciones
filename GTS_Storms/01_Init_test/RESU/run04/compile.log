@@ -1,0 +1,48 @@
+/home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run04/src/cs_user_parameters.c: In function ‘cs_user_model’:
+/home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run04/src/cs_user_parameters.c:1422:1: warning: declaration of ‘cs_user_finalize_setup’ shadows a global declaration [-Wshadow]
+ 1422 | cs_user_finalize_setup(cs_domain_t     *domain)
+      | ^~~~~~~~~~~~~~~~~~~~~~
+In file included from /share/apps/code_saturne/8.0.0/include/code_saturne/cs_base_headers.h:93,
+                 from /share/apps/code_saturne/8.0.0/include/code_saturne/cs_headers.h:41,
+                 from /home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run04/src/cs_user_parameters.c:53:
+/share/apps/code_saturne/8.0.0/include/code_saturne/cs_prototypes.h:768:1: note: shadowed declaration is here
+  768 | cs_user_finalize_setup(cs_domain_t *domain);
+      | ^~~~~~~~~~~~~~~~~~~~~~
+/home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run04/src/cs_user_parameters.c:1460:1: error: expected declaration or statement at end of input
+ 1460 | END_C_DECLS
+      | ^~~~~~~~~~~
+At top level:
+/home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run04/src/cs_user_parameters.c:1422:1: warning: ‘cs_user_finalize_setup’ defined but not used [-Wunused-function]
+ 1422 | cs_user_finalize_setup(cs_domain_t     *domain)
+      | ^~~~~~~~~~~~~~~~~~~~~~
+/home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run04/src/cs_meg_boundary_function.c: In function ‘cs_meg_boundary_function’:
+/home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run04/src/cs_meg_boundary_function.c:58:17: warning: unused variable ‘b_e_id’ [-Wunused-variable]
+   58 |       cs_lnum_t b_e_id = elt_ids[e_id];
+      |                 ^~~~~~
+/home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run04/src/cs_meg_boundary_function.c:36:44: warning: unused parameter ‘xyz’ [-Wunused-parameter]
+   36 |                          const cs_real_t   xyz[][3],
+      |                          ~~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run04/src/cs_meg_initialization.c: In function ‘cs_meg_initialization’:
+/home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run04/src/cs_meg_initialization.c:53:17: warning: unused variable ‘c_id’ [-Wunused-variable]
+   53 |       cs_lnum_t c_id = elt_ids[e_id];
+      |                 ^~~~
+/home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run04/src/cs_meg_initialization.c:75:17: warning: unused variable ‘c_id’ [-Wunused-variable]
+   75 |       cs_lnum_t c_id = elt_ids[e_id];
+      |                 ^~~~
+/home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run04/src/cs_meg_initialization.c:36:40: warning: unused parameter ‘xyz’ [-Wunused-parameter]
+   36 |                       const cs_real_t  xyz[][3],
+      |                       ~~~~~~~~~~~~~~~~~^~~~~~~~
+/home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run04/src/cs_meg_post_profile.c: In function ‘cs_meg_post_profiles’:
+/home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run04/src/cs_meg_post_profile.c:62:18: error: ‘x0’ undeclared (first use in this function); did you mean ‘x’?
+   62 |     x = x1 * s + x0 * (1. - s);
+      |                  ^~
+      |                  x
+/home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run04/src/cs_meg_post_profile.c:62:18: note: each undeclared identifier is reported only once for each function it appears in
+/home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run04/src/cs_meg_post_profile.c:42:15: warning: variable ‘xo’ set but not used [-Wunused-but-set-variable]
+   42 |     cs_real_t xo = -1.;
+      |               ^~
+gcc -DHAVE_CONFIG_H -I/share/apps/code_saturne/8.0.0/include -I/share/apps/code_saturne/8.0.0/include/code_saturne -I/share/apps/salome/9.11.0/BINARIES-CO7/cgns/include -I/share/apps/salome/9.11.0/BINARIES-CO7/medfile/include -I/share/apps/salome/9.11.0/BINARIES-CO7/hdf5/include -I/share/apps/salome/9.11.0/BINARIES-CO7/metis/include -I/share/apps/salome/9.11.0/BINARIES-CO7/scotch/include -I/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/include -DOMPI_SKIP_MPICXX -D_POSIX_C_SOURCE=200809L -DNDEBUG -funsigned-char -W -Wall -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wunused -Wfloat-equal -Werror=implicit-function-declaration -Wmisleading-indentation -Wduplicated-cond -fdiagnostics-color=auto -Werror=format-security -fopenmp -funroll-loops -O2 -Wuninitialized -fexcess-precision=fast -c /home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run04/src/cs_user_extra_operations.c
+gcc -DHAVE_CONFIG_H -I/share/apps/code_saturne/8.0.0/include -I/share/apps/code_saturne/8.0.0/include/code_saturne -I/share/apps/salome/9.11.0/BINARIES-CO7/cgns/include -I/share/apps/salome/9.11.0/BINARIES-CO7/medfile/include -I/share/apps/salome/9.11.0/BINARIES-CO7/hdf5/include -I/share/apps/salome/9.11.0/BINARIES-CO7/metis/include -I/share/apps/salome/9.11.0/BINARIES-CO7/scotch/include -I/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/include -DOMPI_SKIP_MPICXX -D_POSIX_C_SOURCE=200809L -DNDEBUG -funsigned-char -W -Wall -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wunused -Wfloat-equal -Werror=implicit-function-declaration -Wmisleading-indentation -Wduplicated-cond -fdiagnostics-color=auto -Werror=format-security -fopenmp -funroll-loops -O2 -Wuninitialized -fexcess-precision=fast -c /home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run04/src/cs_user_parameters.c
+gcc -DHAVE_CONFIG_H -I/share/apps/code_saturne/8.0.0/include -I/share/apps/code_saturne/8.0.0/include/code_saturne -I/share/apps/salome/9.11.0/BINARIES-CO7/cgns/include -I/share/apps/salome/9.11.0/BINARIES-CO7/medfile/include -I/share/apps/salome/9.11.0/BINARIES-CO7/hdf5/include -I/share/apps/salome/9.11.0/BINARIES-CO7/metis/include -I/share/apps/salome/9.11.0/BINARIES-CO7/scotch/include -I/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/include -DOMPI_SKIP_MPICXX -D_POSIX_C_SOURCE=200809L -DNDEBUG -funsigned-char -W -Wall -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wunused -Wfloat-equal -Werror=implicit-function-declaration -Wmisleading-indentation -Wduplicated-cond -fdiagnostics-color=auto -Werror=format-security -fopenmp -funroll-loops -O2 -Wuninitialized -fexcess-precision=fast -c /home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run04/src/cs_meg_boundary_function.c
+gcc -DHAVE_CONFIG_H -I/share/apps/code_saturne/8.0.0/include -I/share/apps/code_saturne/8.0.0/include/code_saturne -I/share/apps/salome/9.11.0/BINARIES-CO7/cgns/include -I/share/apps/salome/9.11.0/BINARIES-CO7/medfile/include -I/share/apps/salome/9.11.0/BINARIES-CO7/hdf5/include -I/share/apps/salome/9.11.0/BINARIES-CO7/metis/include -I/share/apps/salome/9.11.0/BINARIES-CO7/scotch/include -I/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/include -DOMPI_SKIP_MPICXX -D_POSIX_C_SOURCE=200809L -DNDEBUG -funsigned-char -W -Wall -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wunused -Wfloat-equal -Werror=implicit-function-declaration -Wmisleading-indentation -Wduplicated-cond -fdiagnostics-color=auto -Werror=format-security -fopenmp -funroll-loops -O2 -Wuninitialized -fexcess-precision=fast -c /home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run04/src/cs_meg_initialization.c
+gcc -DHAVE_CONFIG_H -I/share/apps/code_saturne/8.0.0/include -I/share/apps/code_saturne/8.0.0/include/code_saturne -I/share/apps/salome/9.11.0/BINARIES-CO7/cgns/include -I/share/apps/salome/9.11.0/BINARIES-CO7/medfile/include -I/share/apps/salome/9.11.0/BINARIES-CO7/hdf5/include -I/share/apps/salome/9.11.0/BINARIES-CO7/metis/include -I/share/apps/salome/9.11.0/BINARIES-CO7/scotch/include -I/share/apps/easybuild/software/OpenMPI/4.1.1-GCC-10.3.0/include -DOMPI_SKIP_MPICXX -D_POSIX_C_SOURCE=200809L -DNDEBUG -funsigned-char -W -Wall -Wshadow -Wpointer-arith -Wcast-qual -Wcast-align -Wwrite-strings -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wnested-externs -Wunused -Wfloat-equal -Werror=implicit-function-declaration -Wmisleading-indentation -Wduplicated-cond -fdiagnostics-color=auto -Werror=format-security -fopenmp -funroll-loops -O2 -Wuninitialized -fexcess-precision=fast -c /home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run04/src/cs_meg_post_profile.c
