@@ -1,0 +1,2 @@
+iteration, time, drag coeff, lift coeff, side force coeff, net force [x], net force [y], net force [z], net static pressure force [x], net static pressure force [y], net static pressure force [z] 
+1, 2.5e-05, 9.25498, -1.13472, 0.000174265, 7486.75, 0.14097, -917.923, 196587, 7.37078, -17746.4 
