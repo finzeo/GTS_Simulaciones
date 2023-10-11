@@ -1,0 +1,1 @@
+Se paró porque se vio que estaba convirgiendo a 0.33 aprox el drag; esto fue sin usar la versión con almax corregida

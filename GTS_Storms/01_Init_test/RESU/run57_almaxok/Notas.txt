@@ -1,0 +1,8 @@
+Cambios
+	Primera vez que se usó almax corregido (versión 8.0.1 de Code_Saturne)
+
+Resultados
+	No figura toda la corrida porque se tuvo un problema al usar git mientras se corría el caso
+	El drag mejoró notablemente (0.03 aprox): 0.2962
+	Se observa que hay cambios muy abruptos donde la malla refinada de la estela termina; quizás sea mejor extenderla
+	A lo último empeoró un poco el cálculo del drag, motivado quizás por grandes oscilaciones en los residuos de omega y presión (no los puedo ver por haberse eliminado el archivo, por el error al usar git)

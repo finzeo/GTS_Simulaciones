@@ -1,0 +1,1 @@
+r=csvread("residuals.csv"); semilogy(r(:,1),r(:,2),r(:,1),r(:,3),r(:,1),r(:,4),r(:,1),r(:,5),r(:,1),r(:,6));grid;h=legend("velocity","pressure","k","omega","wall dist");legend(h,"location","northeastoutside");
