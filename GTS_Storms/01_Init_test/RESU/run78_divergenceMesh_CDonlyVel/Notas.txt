@@ -1,0 +1,7 @@
+Seteo
+	Se prueba la malla con divergencia (1%) usando CD solo en velocidad, NO en k y omega, para ver si los residuos de omega siguen teniendo ese comportamiento extraño (crece en diferentes niveles hasta estabilizarse)
+
+Resultados
+	Aún con CD solo en velocidad, los residuos de omega se comportan raro. De hecho, los residuos están prácticamente igual
+	Por lo tanto, esa particularidad en las oscilaciones no se debe a usar CD en omega o en k
+	El drag prácticamente da igual a que si se usa CD en k

@@ -1,0 +1,6 @@
+Seteo
+	Se prueba la influencia de considerar por primera vez que las fronteras top, right y left son walls, sobre la base del caso 66
+
+Resultados
+	El drag empeoró respecto del caso 66 (0.2775 acá, contra 0.2682; casi 0.01 superior), evidentemente, por considerar walls todas las fronteras
+	Los residuos excelente, solo que cuando termina el primer paso por el dominio, la presión comienza a oscilar (pero antes todo bien)

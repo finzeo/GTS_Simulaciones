@@ -1,0 +1,8 @@
+Seteo
+	Se prueba la influencia de usar un relaxation factor para la presión distinto de 1
+	En este caso, relaxation factor pressure = 0.9
+	Se mantiene el resto de los seteos respecto del caso run80
+
+Resultados
+	Drag imperceptiblemente mayor (0.0005)
+	Los residuos prácticamente iguales

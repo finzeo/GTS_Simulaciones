@@ -1,0 +1,4 @@
+Seteo
+	Se probó, sobre la resolución del caso 61, que cambiando el blending factor de omega de SOLU de 1.0 a 0.0 se eliminan las oscilaciones de los residuos
+	Sin embargo, no cambia demasiado el drag, aunque bajó (de 0.2691 a 0.2681, comparando ambas continuaciones del caso 61, una con blending factor 1.0 y otra con 0.0). Es decir, bajó 0.001
+	Se lo cortó apenas algo antes del final

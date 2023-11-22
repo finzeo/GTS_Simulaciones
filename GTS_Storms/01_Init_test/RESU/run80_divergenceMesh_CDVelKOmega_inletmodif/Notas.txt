@@ -1,0 +1,9 @@
+Seteo
+	Se mantiene el del caso anterior, con la modificación de que la velocidad en la BC inlet es variable en dirección de acuerdo a la divergencia lateral
+	Tener en cuenta que creo que en la malla consideré un crecimiento del ancho 0.01 veces la longitud en x, pero debería ser que la mitad del ancho crece 0.01 la longitud en x (y en la fórmula para el cálculo de la velocidad justamente tuve en cuenta esto último)
+	Así que se está en un error (el dominio está menos inclinado de lo que debería, y así la velocidad tiene una dirección incorrecta)
+
+Resultados
+	Residuos idénticos al caso anterior (no hay cambio en esto por cambiar dirección de velocidad en la entrada)
+	El drag es ligeramente superior (aumenta 0.001)
+	Nada a destacar sobre gráficos, solo que sigue pasando (aunque antes no lo registraba) que la presión a la salida está algo rara, con ruido

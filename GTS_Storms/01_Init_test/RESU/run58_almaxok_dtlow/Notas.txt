@@ -1,0 +1,6 @@
+Cambios
+	Se dejó el mismo valor de almax, y se bajó el dt para ver cómo influye
+
+Resultados
+	No hay un cambio muy sensible del drag, incluso empeora el drag
+	Oscilaciones de los residuos de omega y presión aún con dt bajo

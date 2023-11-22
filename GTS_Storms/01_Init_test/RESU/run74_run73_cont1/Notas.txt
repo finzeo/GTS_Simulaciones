@@ -1,0 +1,7 @@
+Seteo
+	Se continúa tal cual la corrida 73, sin modificar ningún seteo (solo ver qué pasa al avanzar más el tiempo)
+
+Resultados
+	El drag da prácticamente igual a la primera corrida (apenas superior): 0.2625 (5.42% de error)
+	Los residuos siguieron con la misma tendencia a como había terminado la corrida anterior
+	Los campos gráficamente son prácticamente iguales a los de la primera corrida: sigue apareciendo el mismo ruido por no generarse bien el encapado (de hecho, se ve que yplus>200 en varias zonas de esquinas)

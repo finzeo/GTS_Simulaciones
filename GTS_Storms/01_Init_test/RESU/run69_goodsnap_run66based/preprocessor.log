@@ -1,0 +1,215 @@
+/share/apps/code_saturne/8.0.0/libexec/code_saturne/cs_preprocess 
+--discard-bad-cells --out mesh_input.csm --log 
+/home/finzeo/Tesis/Simulaciones/GTS_Storms/MESH/GTS_2106_v17.med 
+
+  .------------------------------.
+  |                              |
+  |   code_saturne Preprocessor  |
+  |                              |
+  `------------------------------'
+
+  code_saturne version 8.0.1-patch   (built Mon Oct  9 09:01:24 2023)
+
+  CGNS 4.2.0 file format support
+  MED 4.1.1 (HDF5 1.10.3) file format support
+  Reading of compressed files ('.gz') with Zlib 1.2.11
+
+
+
+Case configuration
+------------------
+
+  Date                : Fri Oct 20 11:27:57 2023
+  System              : Linux 4.18.0-372.9.1.el8.x86_64
+  Machine             : pirayu
+  Processor           : Intel(R) Xeon(R) Gold 6226R CPU @ 2.90GHz
+  Memory              : 131390420
+  User                : finzeo ()
+  Directory           : /home/finzeo/Tesis/Simulaciones/GTS_Storms/01_Init_test/RESU/run69_goodsnap_run66based
+
+  Case name           : preprocess
+  Mesh file           : /home/finzeo/Tesis/Simulaciones/GTS_Storms/MESH/GTS_2106_v17.med
+
+
+
+Reading mesh from file in MED (EDF/CEA) format
+----------------------
+  Mesh file: /home/finzeo/Tesis/Simulaciones/GTS_Storms/MESH/GTS_2106_v17.med
+
+
+  Mesh name: GTS_2106_v17
+
+  Number of vertices                          : 38932694
+  Number of faces                             :  1126195
+                                   Family 1   :     6384
+                                   Family 2   :     6384
+                                   Family 3   :    26320
+                                   Family 4   :    26320
+                                   Family 5   :   207168
+                                   Family 6   :    37600
+                                   Family 7   :   804471
+                                   Family 8   :     5952
+                                   Family 9   :     5596
+  Number of cells                             : 37586725
+                                   Family 0   : 37586725
+
+  Wall-clock time: 6.557469 s; CPU time: 6.540479 s
+
+
+Done reading mesh
+-----------------
+  Theoretical mesh size:                 2.738 Gb
+  Theoretical current memory:            3.608 Gb
+  Theoretical peak memory:               6.018 Gb
+  Total memory used:                     6.059 Gb
+
+  Domain coordinate extents:
+
+  [-7.33423e+00, -1.52400e+00, -7.62000e-02]
+  [ 1.05728e+01,  1.52400e+00,  2.05740e+00]
+  Number of elements                    tria3 :      138
+  Number of elements                    quad4 :  1119748
+  Number of elements                  polygon :     6309
+  Number of elements                   penta6 :    18248
+  Number of elements                    hexa8 : 37003374
+  Number of elements               polyhedron :   565103
+
+
+
+Defining families
+-----------------
+
+
+  Element orientation check.
+
+
+Warning
+=======
+33 elements of type hexa8 are mis-oriented or highly warped.
+
+
+EnSight output of mesh: Orientation Error
+-----------------------
+  Creating file: preprocess.ensight/MESH.case
+  Creating file: preprocess.ensight/mesh.geo
+
+Mesh verification:
+
+  Removal of 33 degenerate cells:
+    Initial number of cells           :   37586725
+    Number of cells after processing  :   37586692
+
+End of conversion to descending connectivity
+--------------------------------------------
+  Theoretical mesh size:                 6.656 Gb
+  Theoretical current memory:            7.526 Gb
+  Theoretical peak memory:              16.754 Gb
+  Total memory used:                    16.804 Gb
+
+Warning
+=======
+There is/are 27 isolated face(s)
+
+
+Main mesh properties
+--------------------
+
+  Number of cells:                              37586692
+  Number of internal faces:                    112976343
+  Number of boundary faces:                      1126337
+  Number of vertices:                           38932694
+
+
+Definition of face and cell families
+------------------------------------
+
+  Family 1
+         Group "floor"
+  Number of boundary faces :   207152
+  Number of isolated faces :       16
+  Family 2
+         Group "gtsModel"
+  Number of boundary faces :   804466
+  Number of isolated faces :        5
+  Family 3
+         Group "gtsStruts"
+  Number of boundary faces :     5948
+  Number of isolated faces :        4
+  Family 4
+         Group "gtsStrutsPads"
+  Number of boundary faces :     5594
+  Number of isolated faces :        2
+  Family 5
+         Group "inlet"
+  Number of boundary faces :     6384
+  Family 6
+         Group "left"
+  Number of boundary faces :    26320
+  Family 7
+         Group "outlet"
+  Number of boundary faces :     6384
+  Family 8
+         Group "right"
+  Number of boundary faces :    26320
+  Family 9
+         Group "top"
+  Number of boundary faces :    37600
+  Family 9
+         Default family
+         (no group)
+  Number of cells          : 37586692
+  Number of internal faces : 112976343
+  Number of boundary faces :      169
+
+
+Write output for Kernel
+-----------------------
+
+  Opening file: mesh_input.csm
+
+  Wrote: "start_block:dimensions"
+  Wrote: "n_cells"                         ; Type: "u8"; Size: 1
+  Wrote: "n_faces"                         ; Type: "u8"; Size: 1
+  Wrote: "n_vertices"                      ; Type: "u8"; Size: 1
+  Wrote: "face_vertices_size"              ; Type: "u8"; Size: 1
+  Wrote: "n_group_classes"                 ; Type: "i8"; Size: 1
+  Wrote: "n_group_class_props_max"         ; Type: "i8"; Size: 1
+  Wrote: "n_groups"                        ; Type: "u8"; Size: 1
+  Wrote: "group_name_index"                ; Type: "i8"; Size: 10
+  Wrote: "group_name"                      ; Type: "c "; Size: 67
+  Wrote: "group_class_properties"          ; Type: "i8"; Size: 10
+  Wrote: "end_block:dimensions"
+  Wrote: "start_block:data"
+  Wrote: "face_cells"                      ; Type: "i8"; Size: 228205414
+  Wrote: "cell_group_class_id"             ; Type: "i8"; Size: 37586692
+  Wrote: "face_group_class_id"             ; Type: "i8"; Size: 114102707
+  Wrote: "face_vertices_index"             ; Type: "u8"; Size: 114102708
+  Wrote: "face_vertices"                   ; Type: "i8"; Size: 457476685
+  Wrote: "vertex_coords"                   ; Type: "r8"; Size: 116798082
+  Wrote: "end_block:data"
+  Wrote: "EOF"
+
+  Closing file: mesh_input.csm
+
+
+Time and memory summary
+-----------------------
+
+  User CPU time                       (sec)   :       81.45
+  System CPU time                     (sec)   :       24.74
+  Total time                          (sec)   :      106.45
+  Total CPU time / Total time                 :        1.00
+
+Memory use summary:
+
+  Total memory used:                                  16.804 Gb
+  Theoretical instrumented dynamic memory:            16.754 Gb
+
+
+  .-----------------------.
+  |                       |
+  |  Preprocessor finish  |
+  |                       |
+  `-----------------------'
+
+

@@ -1,0 +1,7 @@
+Seteo
+	Se renueva la corrida 88 (aunque fue casi idéntica a la 87) con los mismos seteos, solo que se quita la indicación manual de la posición de presión de referencia
+
+Resultados
+	Pese a que en la corrida 88 se dijo que no había diferencias entre las mallas 22 y 23, aquí sí se ve diferencias al continuar la corrida (quizás, porque la continuación se hace en condiciones iniciales diferentes)
+	El drag cambia, con respecto al caso anterior, -0.006
+	En residuos no se notan diferencias

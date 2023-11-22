@@ -1,0 +1,6 @@
+Seteo
+	Igual al run 91, pero con blendind factor de 0.8 para la velocidad
+
+Resultados
+	Por ahora el drag está dando igual (0.242)
+	Los residuos mejoraron levemente (no por oscilación, sino por velocidad y k estabilizarse en un valor algo más bajo)

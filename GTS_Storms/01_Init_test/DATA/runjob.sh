@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=SS5913 # nombre para identificar el trabajo. Por defecto es el nombre del script # Autor-SimMall-NumCaso-NumMalla
+#SBATCH --job-name=SS10623 # nombre para identificar el trabajo. Por defecto es el nombre del script # Autor-SimMall-NumCaso-NumMalla
 #SBATCH --ntasks=96 # cantidad de cores pedidos
 ##SBATCH --nodes=1 # cantidad de nodos pedidos
 #SBATCH --ntasks-per-node=32 # cantidad de cores por nodo, para que agrupe o distribuya procesos

@@ -1,0 +1,8 @@
+Seteo
+	Respecto del caso 81, solo cambié la precisión de los solvers (pasé de todo 1e-8 a 1e-5)
+
+Resultados
+	El tiempo que demora cada paso de tiempo baja notablemente (de 16 s a 10 s aprox)
+	El drag aumenta de 0.239 a 0.245 aprox
+	Las oscilaciones de los residuos son las mismas (algo menos la de presión, pero sigue siendo mucho)
+	Evidentemente no se está resolviendo tan bien; quizás si solo se mantiene 1e-8 en presión y el resto en 1e-5 se tenga bajo tiempo sin tanto cambio en el drag

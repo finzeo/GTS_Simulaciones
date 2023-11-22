@@ -1,0 +1,8 @@
+Seteo
+	Cambio importante: se hizo una nueva malla (21), teniendo en cuenta dos errores: mal hecha la divergencia (había hecho 0.5% en vez de 1%) y la zona de nivel 1 no llegaba a todo el ancho hacia el final del dominio
+	Se usa CD en todo (velocidad, k y omega)
+
+Resultados
+	Posteriormente a ejecutarlo, Storms me comentó que la divergencia era del 0.89% sobre el ancho (no su mitad), así que este caso está mal, pero se tienen resultados interesantes a analizar:
+	La mayor divergencia disminuye el drag (~0.22, frente a 0.239 con menor divergencia, del 1% pero sobre todo el ancho del dominio)
+	Los residuos prácticamente igual

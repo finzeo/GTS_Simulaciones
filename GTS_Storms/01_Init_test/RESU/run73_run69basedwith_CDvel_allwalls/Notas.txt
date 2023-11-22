@@ -1,0 +1,10 @@
+Seteo
+	Corrida basada en run69 (dominio extendido, omega UD, lprom) y malla 19 caracterizada por tener bien hecho el snapado, buena transición en encapado en todas las paredes, y extensión de 25w hacia outlet
+	Se usa CD para la velocidad y se usa all walls (el primero disminuye mucho el drag, y el segundo lo aumenta mucho; con la buena transición del encapado se buscaría que no aumente tanto)
+
+Resultados
+	El drag da muy bien (0.2618, 5.14% err)	
+	Los residuos todos bien hasta que casi al terminar la primera pasada por el dominio comienzan a oscilar los residuos de presión
+	El encapado genera ruido, lo cual se ve en planos como z=2 m (cercanos a la parte superior) (pasa donde NO se generan todas las capas y quedan algo deformes), pero no se vería que el ruido se extiende hacia la parte cercana al GTS (solo se concentra cerca de las fronteras exteriores);
+	Por eso para mí el drag aumenta tanto por el hecho de desarrollarse una capa límite en todas las paredes, como también por el ruido generado (por lo tanto, generar una nueva malla donde se asegure que se forma totalmente la capa límite, pero sin sacrificar demasiado en transición)
+	Por ahora, por la utilidad de ver lo que pasa en todo el dominio con el ruido, NO eliminar los archivos de resultados

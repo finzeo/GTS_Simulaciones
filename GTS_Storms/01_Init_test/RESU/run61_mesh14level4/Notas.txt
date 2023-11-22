@@ -1,0 +1,13 @@
+Cambios
+	Solo se cambió la malla: la zona de nivel 5 se quitó, y se creó una zona de nivel 4 que se extiende x=L detrás del GTS (antes pasaba de nivel 5 en una pequeña porción a nivel 3 directamente)
+	Esto se hizo dado que se vio que las condiciones del flujo en la estela variaban abruptamente en la frontera entre las regiones de nivel 5 y 3
+
+Resultados
+	El drag promedio mejoró de 0.2720 a 0.2651, con un comportamiento algo menos oscilatorio
+	Pero pasa que hacia el final de la simulación el drag parecería subir ligeramente (quizás sea útil seguir simulando un poco más)
+	El factor de blending asociado al modelo de turbulencia híbrido parece que se extendió más en el dominio (falta en la parte cercana a inlet); quizás con más tiempo de simulación abarca más (aunque no creo que esto influya demasiado)
+	De hecho, las cantidades k, omega y viscTurb podrían mejorar en cuanto a su uniformidad quizás con mayor tiempo final
+	Muchas oscilaciones de los residuos de omega y presión
+
+Propuesta	
+	Continuar la corrida

@@ -1,0 +1,23 @@
+
+
+System error: No such file or directory
+
+../../../code_saturne/src/fvm/fvm_to_plot.c:206: Fatal error.
+
+Error opening file: "profiles/checkVxProfile_15268.csv"
+
+
+Call stack:
+   1: 0x7fcf2c1548e0 <+0xca8e0>                       (libsaturne-8.0.so)
+   2: 0x7fcf2c15c11f <fvm_writer_field_helper_output_n+0x53f> (libsaturne-8.0.so)
+   3: 0x7fcf2c1554c1 <fvm_to_plot_export_field+0xe1>  (libsaturne-8.0.so)
+   4: 0x7fcf2c158f08 <fvm_writer_export_field+0xa8>   (libsaturne-8.0.so)
+   5: 0x7fcf2c27084d <cs_post_write_probe_values+0x29d> (libsaturne-8.0.so)
+   6: 0x7fcf2c274e43 <cs_post_time_step_output+0x1703> (libsaturne-8.0.so)
+   7: 0x7fcf2c2767a2 <cs_post_write_vars+0x112>       (libsaturne-8.0.so)
+   8: 0x7fcf2c176512 <caltri_+0x1943>                 (libsaturne-8.0.so)
+   9: 0x7fcf2d639360 <main+0x760>                     (libcs_solver-8.0.so)
+  10: 0x7fcf2a6e3d85 <__libc_start_main+0xe5>         (libc.so.6)
+  11: 0x401c6e     <_start+0x2e>                    (cs_solver)
+End of stack
+

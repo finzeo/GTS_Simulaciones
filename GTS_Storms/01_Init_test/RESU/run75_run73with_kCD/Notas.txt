@@ -1,0 +1,6 @@
+Seteo
+	Corrida continuación de run73, con igual seteo solo que ahora usando CD para resolver k (ya se había usado en vel y se vio que mejoraba el drag)
+
+Resultados
+	Efectivamente el drag mejora (pasa a 0.2601, es decir, baja alrededor de 0.002) por usar CD con k. Así, el error del drag es 4.46%
+	Los residuos se mantienen prácticamente igual (NO oscila k)

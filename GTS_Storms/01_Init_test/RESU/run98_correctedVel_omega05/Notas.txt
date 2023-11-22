@@ -1,0 +1,6 @@
+Seteo
+	Se vuelve a correr el primer caso de velocidad corregida (~95 m/s) considerando ahora omega CD 0.5 (para que no oscilen los residuos de omega)
+
+Resultados
+	El drag aumentó 0.003 (de 0.238 a 0.241)
+	Solo se logra que omega no oscile, pero el resto igual (como ya se logró antes con omega 0.5)

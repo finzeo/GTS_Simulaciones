@@ -1,0 +1,11 @@
+Seteo
+	Se cambia a la malla 20, caracterizada por tener una sección divergente (1%), tal como tiene Storms, para ver cómo influye esto, y además tiene bien hecho el encapado en las esquinas exteriores del dominio (así yplus da en el orden de 30 en todos lados)
+	Para lo restante, se usa el mismo seteo que la corrida 75, caracterizada por usar CD para velocidad y k (lógicamente se tuvo que cambiar la velocidad en la entrada, teniendo en cuenta que ahora hay divergencia y que se busca que la velocidad sea 94.244 m/s en donde se verifica el ancho nominal)
+	Se uso vA=vA para determinar la velocidad en la entrada en función de la velocidad en el ancho nominal
+
+Resultados
+	El drag bajó considerablemente (0.232, casi 0.03 bajó), quizás por divergencia y algún ruido
+	Los residuos de presión oscilan como siempre, pero ahora se sumó un comportamiento extraño de k: se estabiliza a diferentes niveles, crecientes, siendo que al final se mantiene en uno relativamente alto
+	Esto último de k no debería ser por usar CD con k, porque en la corrida 75 se usó CD con k y no se verifica un comportamiento raro con los residuos de k
+	Los contours dan prácticamente igual al caso previo, solo que el valor al infinito de presión parece ser diferente en ambos casos
+	ESTA MAL PORQUE NUNCA HABIA CAMBIADO LA VELOCIDAD IMPUESTA EN LA FRONTERA INLET (SOLO EN LA CI HABIA CAMBIADO)

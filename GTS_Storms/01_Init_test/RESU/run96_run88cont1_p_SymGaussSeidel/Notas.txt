@@ -1,0 +1,5 @@
+Seteo
+	Se intentó usar symmetric Gauss Seidel para resolver la presión, como en los otros campos (por defecto usa Flexible Conjugate Gradient)
+
+Resultados
+	No termina de converger, en cada paso de tiempo, la ecuación para la presión

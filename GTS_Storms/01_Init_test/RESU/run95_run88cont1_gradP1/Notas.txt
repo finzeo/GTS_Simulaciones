@@ -1,0 +1,7 @@
+Seteo
+	Continuación del caso 88 con dt low, igual que el caso 92, pero usando una forma diferente de calcular el gradiente de presión
+
+Resultados
+	Por ahora, se nota que tarda mucho más (de 16 s a 26 s por paso de tiempo)
+	Por ahora, el drag se mantiene en 0.242
+	Por ahora, los residuos no están cambiando

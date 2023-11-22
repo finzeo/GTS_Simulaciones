@@ -1,0 +1,7 @@
+Seteo
+	Se prueba usar CD en todas las variables
+
+Resultados
+	Los residuos de omega no solo siguen el comportamiento visto en los dos casos anteriores, sino que ahora adicionalmente oscilan con picos relativamente grandes sobre ese comportamiento extraño general
+	El drag baja bastante respecto de no usar CD en omega (de 0.243 a 0.234 aquí)
+	Los gráficos dan prácticamente igual al caso con omega UD, y CD el resto

@@ -1,0 +1,7 @@
+Cambios
+	Se redujo la turbulent scale length a ~0.01, teniendo en cuenta el cálculo del espesor máximo de la capa límite, para el caso de placa plana y x=Long GTS
+
+Resultados
+	El drag mejora (siempre al bajar la turbulent scale length disminuye el drag); se ve que en un momento relativamente temprano llega a 0.25 e incluso menos, pero después tiende a estabilizarse en una cantidad superior (~0.2720)
+	Todavía no se vio qué pasa al simular más tiempo, pero se verá en casos más adelante que sigue oscilando entre valores más altos a los mínimos que llega acá de 0.25 e incluso un poco menos
+	Los residuos de omega y presión oscilan mucho

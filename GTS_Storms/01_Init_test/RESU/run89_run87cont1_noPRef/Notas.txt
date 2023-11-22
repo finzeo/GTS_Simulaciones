@@ -1,0 +1,7 @@
+Seteo
+	Continuación del caso 87, pero quitando la posición manual de referencia para el cálculo de la presión
+
+Resultados
+	El drag subió 0.006
+	Los residuos prácticamente iguales
+	Nada a destacar en gráficos

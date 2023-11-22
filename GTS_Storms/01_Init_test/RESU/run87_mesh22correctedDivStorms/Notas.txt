@@ -1,0 +1,8 @@
+Seteo
+	Se analiza por primera vez un caso con la divergencia lateral descrita por Storms: 0.89% sobre el ancho total
+	La malla (22) tiene algo de compresión en las capas sobre la pared del suelo, hacia donde comienza la estela
+
+Resultados
+	El drag aumentó 0.01 aprox
+	Los residuos prácticamente iguales
+	Nada a destacar gráficamente

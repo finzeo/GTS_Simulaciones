@@ -1,0 +1,5 @@
+Seteo
+	Se continua la corrida 69 (dominio extendido, omega UD, lprom y buen esnapado), con la particularidad de que se usan muchas iteraciones para calcular el RHS de la ecuación de presión, con el objetivo de reducir las oscilaciones de los residuos pertinentes
+
+Resultados
+	No desaparecen las oscilaciones, y el drag prácticamente se mantiene como estaba hacia el final de la corrida 69 (en definitiva, prácticamente no hay cambios por aumentar las iteraciones asociadas al RHS de presión)

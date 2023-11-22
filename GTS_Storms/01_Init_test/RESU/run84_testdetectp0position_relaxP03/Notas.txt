@@ -1,0 +1,5 @@
+Seteo
+	Solo se cambia el factor de relajación de presión, ahora a 0.3
+
+Resultados
+	No existe ningún cambio apreciable

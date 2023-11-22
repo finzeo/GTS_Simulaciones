@@ -1,0 +1,6 @@
+Seteo
+	Se hizo una continuación 2 de las corridas 61 y 64, usando la malla 14 (nivel 4 en toda la estela), con la particularidad que en esta nueva corrida se usó lprom en vez de lmax (turbulent length scale promedio en vez de máxima), lo cual debería bajar el drag
+
+Resultados
+	Si bien el drag da bastante bien (0.2658 prom), a lo último pareció subir bastante (voy a correr una nueva continuación, a ver qué pasa)
+	Importante que se amplió más hacia la entrada la zona donde se resuelve LES (parece que a menor turbulencia, más amplia es la zona de LES)

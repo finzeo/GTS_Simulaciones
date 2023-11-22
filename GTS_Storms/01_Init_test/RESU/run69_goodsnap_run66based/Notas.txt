@@ -1,0 +1,6 @@
+Seteo
+	Corrida basada en el run66 (dominio extendido, omega UD y lprom) pero con malla 17, la cual se caracteriza por tener bien hecho el snapado (antes solo se ajustaba bien a la forma en la parte trasera del GTS, y el borde delantero inferior, por haberse sacado archivos del subdiccionario featureRefinement que usa la etapa de snapping)
+	
+Resultados
+	Mejoró el drag (0.2643 acá, contra 0.2682 de corrida 66) -> El snapado correcto mejora el drag
+	Los residuos igual de bien (todo bien, hasta que al terminar el primer paso por el dominio empeora la evolución de los residuos de presión)

@@ -1,0 +1,9 @@
+Seteo
+	General para empezar con dt=1e-5
+
+Resultados
+	Por ahora, se ve:
+	0.231 general divergencia bien
+	0.238 por corregir velocidad
+	0.241-2 por omega 0.5
+	0.251 por dt low

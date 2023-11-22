@@ -1,0 +1,6 @@
+Seteo
+	Mismo que el anterior, pero con blending factor de 0.8 a 0.5 ahora para la velocidad y presiónO
+
+Resultados
+	Por ahora, el drag baja de 0.243 a 0.240
+	De nuevo, los residuos no cambian tanto, solo que k y velocidad se estabilizan en valores más bajos

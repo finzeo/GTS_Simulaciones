@@ -1,0 +1,7 @@
+Seteo
+	Se continúa run88, con modificación: se usa omega 0.5 CD, para ver si se van las oscilaciones de omega
+	Se vuelve a usar dt=5e-5
+
+Resultados
+	Omega oscila pero muy acotadamente ahora (prácticamente no hace saltos)
+	El drag se incrementa ligeramente (0.004)

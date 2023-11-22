@@ -1,0 +1,7 @@
+Seteo
+	Se continua la corrida 69 (dominio extendido, omega UD, lprom y malla esnapada bien), con la particularidad de usar CD 1.0 para la velocidad
+
+Resultados
+	El drag baja muchísimo (~0.02 disminución), es 0.2448
+	Los residuos prácticamente igual (no hay mayores oscilaciones por usar CD en velocidad en vez de SOLU; quizás algo más oscila omega, pero no sería significativo)
+	Nada a destacar en los gráficos de los campos solución

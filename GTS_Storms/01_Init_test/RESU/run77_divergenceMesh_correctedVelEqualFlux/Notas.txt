@@ -1,0 +1,9 @@
+Seteo
+	Al verse que el seteo anterior, primero para el caso de malla con divergencia lateral del 1%, se había colocado mal el valor de velocidad en la entrada (para tener igual flujo): no se había cambiado el dato de velocidad en la entrada al nuevo valor (solo el de la CI), se cambió convenientemente.
+	Solo cambió ese seteo
+
+Resultados
+	El drag subió 0.01 aprox con respecto al caso previo donde se había colocado mal la CB inlet (0.243 aprox ahora), lo cual sigue siendo bajo (quizás disminuyendo el dt mejore)
+	Los residuos son idénticos al caso previo (omega se estabiliza en valores crecientes en el tiempo)
+	Se probará si este comportamiento inusual en los residuos es por algún seteo incorrecto del esquema de advección, si es por tener que tener ángulo variable de velocidad de entrada o si directamente por tener divergencia lateral en el dominio
+	

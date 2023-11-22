@@ -1,0 +1,7 @@
+Seteo
+	Se hace una tercera continuación de la corrida 61 (61-64-65-67), con la intención de ver por qué en el caso anterior, si bien dio bastante bien el drag, a lo último subió a valores algo altos
+	Por las dudas, se seteó un blending factor para omega de 0.51 (para ver si mejora la precisión, sin romperse la buena evolución de los residuos que venía teniendo con blending factor 0)
+
+Resultados
+	El drag da 0.2669 prom (apenas algo superior al promedio anterior, pero prácticamente igual)
+	El uso de omega 0.51 no mejoró la evolución de los residuos de omega, y no bajó el drag

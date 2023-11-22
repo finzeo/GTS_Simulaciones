@@ -1,0 +1,8 @@
+Seteo
+	Idéntico a caso anterior, solo que con nueva malla (23), en la cual se usa como nivel de refinamiento base el que anteriormente era 1, para evitar problemas (skewness y necesidad de agrandar la zona de refinamiento
+	de los wake borders, que llevaba a comprimir la malla sobre el suelo cercano)
+	Se evalúa si dicha compresión de la malla provocaba alguna diferencia significativa en el drag (solo esa diferencia)
+
+Resultados
+	Prácticamente no cambió el drag por la malla; es indistinto usar la malla 22 o 23
+	Los residuos y gráficos similares

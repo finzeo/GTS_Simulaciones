@@ -1,0 +1,7 @@
+Seteo
+	Basado en corrida 69 (dominio extendido, omega UD, lprom y buen esnapado), con la particularidad de reducir dt a la mitad (2.5e-5 s)
+
+Resultados
+	Drag prom 0.2865 (empeoró 0.02 aprox; mucho). Esto lógicamente por reducir el dt
+	Los gráficos solución parecen OK y sin ningún cambio significativo respecto de los obtenidos con dt alto	
+	Los residuos igual de bien (todo bien, hasta que al terminar el primer paso por el dominio empeora la evolución de los residuos de presión)

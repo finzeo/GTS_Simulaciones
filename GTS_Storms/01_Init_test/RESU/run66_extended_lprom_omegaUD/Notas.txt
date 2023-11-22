@@ -1,0 +1,8 @@
+Seteo
+	Se usó por primera vez malla extendida, de acuerdo a recomendación de Unaune (32.5w hacia atrás del GTS, aprox)
+	Como turbulent length scale se usa l=0.0073951
+
+Resultados
+	Drag promedio 0.2682 (7.71% err); empeoró un poco con respecto al caso 61, donde se tuvo 0.2651, y al caso 65, donde se tuvo 0.2658
+	Evidentemente la extensión del dominio no mejora el drag
+	Los campos de presión y velocidad terminan más uniformes a la salida, ahora extendida

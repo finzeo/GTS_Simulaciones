@@ -1,0 +1,7 @@
+Seteo
+	En las últimas tandas de casos, se había seteado mal la velocidad (debe ser 94.244 m/s en donde width = 3.048 m, es decir, en la entrada real del túnel, y no la extendida numéricamente), por lo que la velocidad da -> 94.244 * 3.048/3.005921344 m/s = 95.563 m/s
+
+Resultados
+	El drag aumentó de 0.231 a 0.238
+	Los residuos prácticamente igual (oscila un poco más la presión, pero como es por corregir la velocidad no hay nada que se haya hecho mal adicionalmente)
+	Gráficamente nada a destacar

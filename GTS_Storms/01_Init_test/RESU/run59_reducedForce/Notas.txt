@@ -1,0 +1,13 @@
+Cambios
+	Se quitó en el análisis del drag el aporte de los struts; parece mejorar
+
+Resultados
+	Se ven bien los campos solución, aunque hubo bastante oscilaciones de los residuos de omega y presión
+	La zona de nivel 5 no alcanza a cubrir toda la zona de baja presión (pero por poco) detrás del GTS (quizás podría extender la zona de nivel 5 solo ese poco más, si fuera necesario) (más o menos, hasta x=0.63 m, y si quiero cubrir también la zona subsiguiente de alta presión, x=1 m)
+	Duda de si no hay que extender más el tiempo
+	Resultados de coeficientes de fuerzas:	
+		octave:2> mean(t(2000:end,3))
+		ans = 0.2676 (error = 7.47%)
+		octave:3> mean(t(2000:end,4))
+		ans = -0.1500
+

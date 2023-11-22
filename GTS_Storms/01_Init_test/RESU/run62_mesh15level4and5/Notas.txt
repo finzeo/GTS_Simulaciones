@@ -1,0 +1,7 @@
+Cambios
+	Solo se cambió la malla, volviendo al nivel 5 y ahora en una zona más extendida, pero al mismo tiempo manteniendo el nivel 4 agregado previamente en una longitud x=L
+
+Resultados
+	El drag volvió a niveles similares a los vistos con la malla "mala" usada previamente (de nivel 5 en una extensión muy pobre, y enseguida bajando a nivel 3) (con la malla de nivel 4 solamente daba alrededor de 0.265, y ahora volvió al orden de 0.272)
+	Los residuos de omega y presión siguen oscilando mucho
+	Evidentemente no es una buena malla, siendo que el cambio de nivel 5 a nivel inferior trae problemas

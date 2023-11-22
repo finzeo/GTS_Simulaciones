@@ -1,0 +1,8 @@
+Seteo
+	Se prueba colocar como presión de referencia a la indicada por Storms
+	Sin embargo, posteriormente se vio que se colocó sin querer una posición por fuera del dominio, dado que es un punto que está más allá del ancho del dominio
+
+Resultados
+	Por alguna razón, por solo cambiar esto el drag crece de 0.235 a 0.239 (no debería influir dónde pongo la presión de referencia)
+	Puede que esté relacionado a lo anterior, pero los residuos de presión están oscilando aún más
+	No se nota nada nuevo extraño en los gráficos de los campos, sobre todo en el de presión

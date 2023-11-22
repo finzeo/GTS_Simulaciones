@@ -1,0 +1,10 @@
+Seteo
+	Se continuó la simulación hecha en run61, caracterizada por tener una malla con todo nivel 4 en la estela
+	Solo se quiso evaluar qué pasa con más tiempo, no se cambió nada más del seteo
+
+Resultados
+	Drag promedio: 0.2691 (8.07% err), empeoró respecto del del primer tramo simulado (~0.265)
+	Siguieron oscilando mucho los residuos de omega y presión
+	Los campos de velocidad y presión gráficamente son casi idénticos a la primera corrida (no se alargó la estela como había supuesto)
+	Tampoco cambió demasiado el campo de hybrid blending function (sigue habiendo una zona en la entrada que no usa LES)
+	Viendo intuitivamente el espesor de la capa límite de forma gráfica, me parece bien supuesto delta_max = 0.03 m aprox, y no me parece mala idea considerar el valor prom delta_prom = 0.018 m

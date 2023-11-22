@@ -1,0 +1,5 @@
+Seteo
+	Respecto del caso anterior, solo se cambió el factor de relajación de presión (de 0.9 a 0.7)
+
+Resultados
+	Prácticamente da casi idéntico en todo (el drag por ejemplo no cambió nada en sus valores promedios)
